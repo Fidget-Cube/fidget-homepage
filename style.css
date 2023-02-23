@@ -1,0 +1,30 @@
+body {
+    background-image: url("./animated-static-gif-9-563022116.gif");
+}
+.main_body {
+    display: block;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.contact_info {
+    font-family: monospace;
+    font-size: 20px;
+    color: white;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-decoration: none !important;
+	
+}
+a {
+  color: inherit;
+}
+.contact_info a {
+    text-decoration: none;
+    color: inherit;
+}
+.contact_info a:hover {
+    text-decoration: underline;
+}

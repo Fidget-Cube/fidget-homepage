@@ -1,5 +1,9 @@
 body {
-    background-image: url("./animated-static-gif-9-563022116.gif");
+    background-color: black;
+}
+.header {
+    display: block;
+    margin: 50px auto;
 }
 .main_body {
     display: block;
@@ -12,11 +16,9 @@ body {
     font-size: 20px;
     color: white;
     display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
+    margin: 50px;
+    text-align: center;
     text-decoration: none !important;
-	
 }
 a {
   color: inherit;
@@ -27,4 +29,9 @@ a {
 }
 .contact_info a:hover {
     text-decoration: underline;
+}
+.github {
+    display: block;
+    width: 50%;
+    margin: 50px auto;
 }

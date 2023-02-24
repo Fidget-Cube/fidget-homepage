@@ -7,13 +7,13 @@ body {
 }
 .main_body {
     display: block;
-    font-size: 30px;
+    font-size: 40px;
     color: white;
     text-align: center;
 }
 .contact_info {
     font-family: monospace;
-    font-size: 20px;
+    font-size: 30px;
     color: white;
     display: block;
     margin: 50px;

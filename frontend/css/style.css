@@ -1,5 +1,5 @@
 body {
-    background-image: url(test.gif);
+    background-image: url(/img/test.gif);
 }
 .header {
     display: block;
@@ -10,6 +10,7 @@ body {
     font-size: 40px;
     color: white;
     text-align: center;
+    word-wrap: break-word;
 }
 .contact_info {
     font-family: monospace;
@@ -19,6 +20,7 @@ body {
     margin: 50px;
     text-align: center;
     text-decoration: none !important;
+    word-wrap: break-word;
 }
 a {
   color: inherit;

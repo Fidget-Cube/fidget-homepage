@@ -32,8 +32,13 @@ a {
 .contact_info a:hover {
     text-decoration: underline;
 }
-.github {
+.embeds {
     display: block;
     width: 50%;
     margin: 50px auto;
+}
+.mastodon {
+    display: block;
+    width: 100%;
+    height: 800px;
 }

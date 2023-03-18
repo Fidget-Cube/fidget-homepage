@@ -14,6 +14,7 @@ Hosting with Nginx:
 - `sudo nginx -t` and `sudo systemctl restart nginx`
 
 Your website should now be live at localhost:80
+To get an ssl cert, use certbot: https://certbot.eff.org/
 
 Add Ratelimiting:
 - Within /etc/nginx/sites-available/default:

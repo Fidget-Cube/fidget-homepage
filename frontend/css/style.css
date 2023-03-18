@@ -1,6 +1,10 @@
 body {
     background-image: url(/img/test.gif);
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 .header {
     display: block;
     margin: 50px auto;

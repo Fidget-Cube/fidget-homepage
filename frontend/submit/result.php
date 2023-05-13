@@ -8,7 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <div class="contact_info">
+        <div class="title">
+            <p>
             <?php
                 $message = "770e1a67280de32989eb77511b5fc3e99b955eb9f3406896fb315831b743c84f56296d73a4287f9280dabff500a830823b7da48d8d34a162021a32fa3f7e02056abbd18a333723d5a42b6ce09b0d9abd";
                 $key = "4C6574277320616C6C206C6F7665206C61696E2121212121";
@@ -50,9 +51,11 @@
                         echo $key;
                         break;
                     default:
+                        echo "";
                         break;
                 }
             ?>
+            </p>
         </div>
     </body>
 </html>

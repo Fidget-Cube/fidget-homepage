@@ -20,3 +20,9 @@ Add Ratelimiting:
 - Within /etc/nginx/sites-available/default:
     - add `limit_req_zone $binary_remote_addr zone=mylimit:10m rate=6r/m;` outside everything
     - add `limit_req zone=mylimit;` inside `location ~ \.php$ {`
+
+TODO:
+ - Add directory of all posts
+ - Add CV
+ - Add RSS feed
+ - Switch to Angular or something

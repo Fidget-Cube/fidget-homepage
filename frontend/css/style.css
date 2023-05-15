@@ -1,6 +1,7 @@
 /* Defaults */
 
 body {
+    background-color: black;
     background-image: url(/img/test.gif);
 }
 
@@ -24,6 +25,10 @@ a:hover {
 ul {
     list-style-type: square;
     padding-left: 3vw;
+}
+
+li {
+    padding: 0.8vw;
 }
 
 md-block {
@@ -176,6 +181,41 @@ input[type=submit] {
     cursor: pointer;
 }
 
+/* Directory */
+
+.all_posts {
+    margin: auto;
+    width: 60%;
+    height: 90%;
+    background-color: black;
+    padding: 0.5vw;
+    /* border: 5px solid white; */
+}
+
+/* About */
+
+.about {
+    margin: auto;
+    width: 80%;
+    height: 90%;
+    padding: 0.5vw;
+    /* border: 5px solid white; */
+}
+
+.ctfs {
+    float: left;
+    width: 45%;
+    background-color: black;
+    /* border: 5px solid white; */
+}
+
+.talks {
+    float: right;
+    width: 45%;
+    background-color: black;
+    /* border: 5px solid white; */
+}
+
 /* Blog Post Page */
 
 .blog_post {
@@ -188,6 +228,7 @@ input[type=submit] {
 }
 
 /* Category Page */
+
 .category_title {
     font-size: 1.8vw;
     color: white;

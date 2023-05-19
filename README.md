@@ -21,8 +21,10 @@ Add Ratelimiting:
     - add `limit_req_zone $binary_remote_addr zone=mylimit:10m rate=6r/m;` outside everything
     - add `limit_req zone=mylimit;` inside `location ~ \.php$ {`
 
+Hosting with Cloudflare:
+ - Currently using Cloudflare for domain protections. Can actually create a tunnel to cloudflare without opening ports on our local server.
+ - https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-guide/local/
+ - https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-guide/local/as-a-service/linux/
+
 TODO:
- - Add directory of all posts
- - Add CV
  - Add RSS feed
- - Switch to Angular or something

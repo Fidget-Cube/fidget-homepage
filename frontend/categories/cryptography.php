@@ -16,11 +16,11 @@
                 </h2>
                 <ul>
                     <li>
-                        <?php include "./modules/posts/provably_secure_2.html"?>
+                        <?php include "../modules/posts/provably_secure_2.html"?>
                     </li>
                 </ul>
             </div>
-            <?php include "./modules/sidebar.html"?>
+            <?php include "../modules/sidebar.html"?>
         </span>
     </body>
 </html>

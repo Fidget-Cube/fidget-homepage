@@ -28,3 +28,7 @@ Hosting with Cloudflare:
 
 TODO:
  - Add RSS feed
+ - Convert to Wordpress
+ - Use PHP to modularize website
+ - Remove dependency on md-block
+ 

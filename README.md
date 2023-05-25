@@ -19,7 +19,8 @@ To get an ssl cert, use certbot: https://certbot.eff.org/
 Add Ratelimiting:
 - Within /etc/nginx/sites-available/default:
     - add `limit_req_zone $binary_remote_addr zone=mylimit:10m rate=6r/m;` outside everything
-    - add `limit_req zone=mylimit;` inside `location ~ \.php$ {`
+    - add a new location, identical to the `location ~ \.php$ {` directive, but specified as `location = /submit/result.php {`
+    - add `limit_req zone=mylimit;` inside `location = /submit/result.php {`
 
 Hosting with Cloudflare:
  - Currently using Cloudflare for domain protections. Can actually create a tunnel to cloudflare without opening ports on our local server.
@@ -31,4 +32,3 @@ TODO:
  - Convert to Wordpress
  - Use PHP to modularize website
  - Remove dependency on md-block
- 

@@ -9,30 +9,11 @@
         <script type="module" src="https://md-block.verou.me/md-block.js"></script>
     </head>
     <body>
-        <div class="header">
-            <div class="puzzle">
-                <a href="/">
-                    <img src="/img/puzzle-alt.png" alt="">
-                </a>
-            </div>
-            <div class="contact_info">
-                <a href="mailto:max@fidgetcube.dev">Email</a><br>
-                <a href="https://github.com/Fidget-Cube" target="_blank">Github</a><br>
-                <a href="https://www.linkedin.com/in/maxvonb" target="_blank">LinkedIn</a><br>
-                <a href="https://infosec.exchange/@fidgetcube" target="_blank">Mastodon</a><br>
-            </div>
-            <div class="links">
-                <a href="/posts/directory.html">All Posts</a><br>
-                <a href="/about.html">My CV</a><br>
-                <a style="color:black;" href="/submit">???</a><br>
-            </div>
-            <div class="title">
-                <p>
-                Fidget-Cube's Security Blog<br>
-                I like puzzles
-                </p>
-            </div>
-        </div>
+        <?php
+            $headerFile = fopen("./modules/header.html", "r") or die("<p>ERROR: Could not display header</p>");
+            echo fread($headerFile, filesize("./modules/header.html"));
+            fclose($headerFile);
+        ?>
         <div class="about">
             <div class="ctfs">
                 <h2 id="title">CTF Competitions</h2>

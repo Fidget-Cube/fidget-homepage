@@ -17,7 +17,7 @@
                         <li>
                             <span>
                                 <time datetime="2023-02-08T00:00:00+00:00">Feb 08 -- </time>
-                                <a href="/posts/provably_secure_2.html">DiceCTF 2023 Writeups: Provably Secure 2 (Medium crypto challenge using RSA)</a>
+                                <a href="/posts/provably_secure_2.php">DiceCTF 2023 Writeups: Provably Secure 2 (Medium crypto challenge using RSA)</a>
                             </span>
                         </li>
                     </ul>

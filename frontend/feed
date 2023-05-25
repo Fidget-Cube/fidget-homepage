@@ -33,14 +33,14 @@
             <p><code>plaintext = r0-private-key(ciphertext0) (+) r1-private-key(ciphertext1)</code>  </p>
             <p>This operation works because of properties of the XOR ((+)) operation. Namely, if a (+) b = c, then c (+) b = a and c (+) a = b. We can actually use this property to our advantage.  </p>
             <p>Let&#39;s make 2 encryption queries. For the first, we&#39;ll make m0 00000000000000000000000000000000 for simplicity, and m1 ffffffffffffffffffffffffffffffff for fun.  </p>
-            <pre><code><span class="hljs-name">m0</span> <span class="hljs-comment">(16 byte hexstring)</span>: <span class="hljs-number">00000000000000000000000000000000</span>
-            <span class="hljs-name">m1</span> <span class="hljs-comment">(16 byte hexstring)</span>: ffffffffffffffffffffffffffffffff
-            <span class="hljs-number">298</span>c<span class="hljs-number">7</span>e<span class="hljs-number">2</span>c...
-            </code></pre><p>For the second, we&#39;ll make both messages the same (also 00000000000000000000000000000000 for simplicity).  </p>
-            <pre><code><span class="hljs-name">m0</span> <span class="hljs-comment">(16 byte hexstring)</span>: <span class="hljs-number">00000000000000000000000000000000</span>
-            <span class="hljs-name">m1</span> <span class="hljs-comment">(16 byte hexstring)</span>: <span class="hljs-number">00000000000000000000000000000000</span>
-            <span class="hljs-number">7</span>f<span class="hljs-number">5</span>b<span class="hljs-number">2</span>a<span class="hljs-number">85.</span>..
-            </code></pre><p>From what we know about the encryption process, both of these outputs are a combination of 2 ciphertexts, I&#39;ll name them ct0_a and ct1_a from our first query, and ct0_b and ct1_b from our second. For the rest of this proof, &quot;a&quot; will denote data from our first encryption query, and &quot;b&quot; will denote the second.  </p>
+            <p><code>m0 (16 byte hexstring): 00000000000000000000000000000000</code><br/>
+            <code>m1 (16 byte hexstring): ffffffffffffffffffffffffffffffff</code><br/>
+            <code>298c7e2c...</code>  </p>
+            <p>For the second, we&#39;ll make both messages the same (also 00000000000000000000000000000000 for simplicity).  </p>
+            <p><code>m0 (16 byte hexstring): 00000000000000000000000000000000</code><br/>
+            <code>m1 (16 byte hexstring): 00000000000000000000000000000000</code><br/>
+            <code>7f5b2a85...</code></p>
+            <p>From what we know about the encryption process, both of these outputs are a combination of 2 ciphertexts, I&#39;ll name them ct0_a and ct1_a from our first query, and ct0_b and ct1_b from our second. For the rest of this proof, &quot;a&quot; will denote data from our first encryption query, and &quot;b&quot; will denote the second.  </p>
             <p>Since these ciphertexts are encrypted and decrypted separately, we can mix them around. What if we were to pair ct0_a with ct1_b, and ct0_b with ct1_a?  </p>
             <p><code>r0-private-key(ct0_a) (+) r1-private-key(ct1_b) = (random_data_a) (+) (plaintext_b (+) random_data_b)</code>  </p>
             <p><code>r0-private-key(ct0_b) (+) r1-private-key(ct1_a) = (random_data_b) (+) (plaintext_a (+) random data_a)</code>  </p>

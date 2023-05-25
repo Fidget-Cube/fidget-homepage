@@ -8,11 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <?php
-            $headerFile = fopen("../modules/header.html", "r") or die("<p>ERROR: Could not display header</p>");
-            echo fread($headerFile, filesize("../modules/header.html"));
-            fclose($headerFile);
-        ?>
+        <?php include "../modules/header.html"?>
         <div>
             <p id="title" style="text-align: center; word-wrap: break-word;">
             <?php

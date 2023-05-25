@@ -6,14 +6,9 @@
         <meta name="description" content="Fidget-Cube Homepage">
         <link rel="stylesheet" href="/css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="module" src="https://md-block.verou.me/md-block.js"></script>
     </head>
     <body>
-        <?php
-            $headerFile = fopen("./modules/header.html", "r") or die("<p>ERROR: Could not display header</p>");
-            echo fread($headerFile, filesize("./modules/header.html"));
-            fclose($headerFile);
-        ?>
+        <?php include "./modules/header.html"?>
         <div class="about">
             <div class="ctfs">
                 <h2 id="title">CTF Competitions</h2>

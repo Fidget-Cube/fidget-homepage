@@ -27,8 +27,3 @@ Hosting with Cloudflare:
  - https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-guide/local/
  - https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-guide/local/as-a-service/linux/
 
-TODO:
- - Add RSS feed
- - Convert to Wordpress
- - Use PHP to modularize website
- - Remove dependency on md-block

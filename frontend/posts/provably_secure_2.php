@@ -9,11 +9,7 @@
         <script type="module" src="https://md-block.verou.me/md-block.js"></script>
     </head>
     <body>
-        <?php
-            $headerFile = fopen("../modules/header.html", "r") or die("<p>ERROR: Could not display header</p>");
-            echo fread($headerFile, filesize("../modules/header.html"));
-            fclose($headerFile);
-        ?>
+        <?php include "../modules/header.html"?>
         <div class="blog_post">
             <h1 id="provably-secure-2">Provably Secure 2</h1>
             <h2 id="now-with-less-cheese-still-pretty-simple-though-nc-mc-ax-31497-">Now with less cheese! Still pretty simple though. <code>nc mc.ax 31497</code></h2>

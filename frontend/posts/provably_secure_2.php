@@ -11,10 +11,10 @@
     <body>
         <?php include "../modules/header.html"?>
         <div class="blog_post">
-            <h1 id="provably-secure-2">Provably Secure 2</h1>
+        <h1 id="provably-secure-2">Provably Secure 2</h1>
             <h2 id="now-with-less-cheese-still-pretty-simple-though-nc-mc-ax-31497-">Now with less cheese! Still pretty simple though. <code>nc mc.ax 31497</code></h2>
             <blockquote>
-            <p>category: Crypto<br>author: jyu<br>solves: 155<br>points: 117<br>challenge file(s): <a href="https://github.com/Fidget-Cube/write-ups/tree/main/2023/DiceCTF/Provably-Secure-2/server.py">server.py</a><br>solution file(s): <a href="https://github.com/Fidget-Cube/write-ups/tree/main/2023/DiceCTF/Provably-Secure-2/client.py">client.py</a><br>original writeup: <a href="https://github.com/Fidget-Cube/write-ups/tree/main/2023/DiceCTF/Provably-Secure-2">https://github.com/Fidget-Cube/write-ups/tree/main/2023/DiceCTF/Provably-Secure-2</a></p>
+            <p>category: Crypto<br/>author: jyu<br/>solves: 155<br/>points: 117<br/>challenge file(s): <a href="https://github.com/Fidget-Cube/write-ups/tree/main/2023/DiceCTF/Provably-Secure-2/server.py">server.py</a><br/>solution file(s): <a href="https://github.com/Fidget-Cube/write-ups/tree/main/2023/DiceCTF/Provably-Secure-2/client.py">client.py</a><br/>original writeup: <a href="https://github.com/Fidget-Cube/write-ups/tree/main/2023/DiceCTF/Provably-Secure-2">https://github.com/Fidget-Cube/write-ups/tree/main/2023/DiceCTF/Provably-Secure-2</a></p>
             </blockquote>
             <p>This server is basically a simulation of the IND-CCA2 game testing a custom cryptographic system. The game is described in detail here <a href="https://en.wikipedia.org/wiki/Ciphertext_indistinguishability">https://en.wikipedia.org/wiki/Ciphertext_indistinguishability</a>.  </p>
             <p>The server makes 128 passes, generating a random bit (0 or 1) each pass. Our goal is to call a &quot;Solve&quot; function, and correctly &quot;guess&quot; the bit 128 times, at which point a flag is printed. In addition, the server also provides &quot;Query Encryption&quot; and &quot;Query Decryption&quot; functions.  </p>
@@ -27,12 +27,12 @@
             <p><code>plaintext = r0-private-key(ciphertext0) (+) r1-private-key(ciphertext1)</code>  </p>
             <p>This operation works because of properties of the XOR ((+)) operation. Namely, if a (+) b = c, then c (+) b = a and c (+) a = b. We can actually use this property to our advantage.  </p>
             <p>Let&#39;s make 2 encryption queries. For the first, we&#39;ll make m0 00000000000000000000000000000000 for simplicity, and m1 ffffffffffffffffffffffffffffffff for fun.  </p>
-            <p><code>m0 (16 byte hexstring): 00000000000000000000000000000000</code>
-            <code>m1 (16 byte hexstring): ffffffffffffffffffffffffffffffff</code>
+            <p><code>m0 (16 byte hexstring): 00000000000000000000000000000000</code><br/>
+            <code>m1 (16 byte hexstring): ffffffffffffffffffffffffffffffff</code><br/>
             <code>298c7e2c...</code>  </p>
             <p>For the second, we&#39;ll make both messages the same (also 00000000000000000000000000000000 for simplicity).  </p>
-            <p><code>m0 (16 byte hexstring): 00000000000000000000000000000000</code>
-            <code>m1 (16 byte hexstring): 00000000000000000000000000000000</code>
+            <p><code>m0 (16 byte hexstring): 00000000000000000000000000000000</code><br/>
+            <code>m1 (16 byte hexstring): 00000000000000000000000000000000</code><br/>
             <code>7f5b2a85...</code></p>
             <p>From what we know about the encryption process, both of these outputs are a combination of 2 ciphertexts, I&#39;ll name them ct0_a and ct1_a from our first query, and ct0_b and ct1_b from our second. For the rest of this proof, &quot;a&quot; will denote data from our first encryption query, and &quot;b&quot; will denote the second.  </p>
             <p>Since these ciphertexts are encrypted and decrypted separately, we can mix them around. What if we were to pair ct0_a with ct1_b, and ct0_b with ct1_a?  </p>

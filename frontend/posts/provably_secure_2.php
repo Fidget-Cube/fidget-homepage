@@ -6,12 +6,11 @@
         <meta name="description" content="Fidget-Cube Homepage">
         <link rel="stylesheet" href="/css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="module" src="https://md-block.verou.me/md-block.js"></script>
     </head>
     <body>
         <?php include "../modules/header.html"?>
         <div class="blog_post">
-        <h1 id="provably-secure-2">Provably Secure 2</h1>
+            <h1 id="provably-secure-2">Provably Secure 2</h1>
             <h2 id="now-with-less-cheese-still-pretty-simple-though-nc-mc-ax-31497-">Now with less cheese! Still pretty simple though. <code>nc mc.ax 31497</code></h2>
             <blockquote>
             <p>category: Crypto<br/>author: jyu<br/>solves: 155<br/>points: 117<br/>challenge file(s): <a href="https://github.com/Fidget-Cube/write-ups/tree/main/2023/DiceCTF/Provably-Secure-2/server.py">server.py</a><br/>solution file(s): <a href="https://github.com/Fidget-Cube/write-ups/tree/main/2023/DiceCTF/Provably-Secure-2/client.py">client.py</a><br/>original writeup: <a href="https://github.com/Fidget-Cube/write-ups/tree/main/2023/DiceCTF/Provably-Secure-2">https://github.com/Fidget-Cube/write-ups/tree/main/2023/DiceCTF/Provably-Secure-2</a></p>

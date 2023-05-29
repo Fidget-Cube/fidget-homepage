@@ -8,19 +8,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <?php include "./modules/header.html"?>
+        <?php include "../modules/header.html"?>
         <span>
             <div class="feed">
+                <h2 class="category_title">
+                    Category: Reverse Engineering
+                </h2>
                 <ul>
                     <li>
-                        <?php include "./modules/posts/omgzip.html"?>
-                    </li>
-                    <li>
-                        <?php include "./modules/posts/provably_secure_2.html"?>
+                        <?php include "../modules/posts/omgzip.html"?>
                     </li>
                 </ul>
             </div>
-            <?php include "./modules/sidebar.html"?>
+            <?php include "../modules/sidebar.html"?>
         </span>
     </body>
 </html>

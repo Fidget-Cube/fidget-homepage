@@ -20,7 +20,7 @@
                                 Defcon CTF 2023 Qualifiers
                             </a>
                             <p>
-                                # TBD
+                                # 92nd place (PacMia)
                             </p>
                         </span>
                     </li>

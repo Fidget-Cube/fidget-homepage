@@ -9,8 +9,18 @@
     </head>
     <body>
         <?php include "../modules/header.html"?>
-        <div class="blog_post">
-            $body$
-        </div>
+        <span>
+            <div class="feed">
+                <h2 class="category_title">
+                    Category: JavaScript
+                </h2>
+                <ul>
+                    <li>
+                        <?php include "../modules/posts/javascript_is_a_joke.html"?>
+                    </li>
+                </ul>
+            </div>
+            <?php include "../modules/sidebar.html"?>
+        </span>
     </body>
 </html>

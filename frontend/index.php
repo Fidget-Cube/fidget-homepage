@@ -13,6 +13,9 @@
             <div class="feed">
                 <ul>
                     <li>
+                        <?php include "./modules/posts/javascript_is_a_joke.html"?>
+                    </li>
+                    <li>
                         <?php include "./modules/posts/omgzip.html"?>
                     </li>
                     <li>

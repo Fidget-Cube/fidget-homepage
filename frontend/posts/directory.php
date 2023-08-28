@@ -16,13 +16,19 @@
                     <ul id="description">
                         <li>
                             <span>
+                                <time datetime="2023-08-27T22:41:47-07:00">Aug 27 2023 -- </time>
+                                <a href="/posts/javascript_is_a_joke.php">JavaScript is a Joke</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span>
                                 <time datetime="2023-05-29T11:25:00-08:00">May 29 2023 -- </time>
                                 <a href="/posts/omgzip.php">DEFCON CTF Qualifiers Writeup: OMGzip (Python Reverse Engineering)</a>
                             </span>
                         </li>
                         <li>
                             <span>
-                                <time datetime="2023-02-08T00:00:00+00:00">Feb 08 -- </time>
+                                <time datetime="2023-02-08T00:00:00+00:00">Feb 08 2023 -- </time>
                                 <a href="/posts/provably_secure_2.php">DiceCTF 2023 Writeups: Provably Secure 2 (Medium crypto challenge using RSA)</a>
                             </span>
                         </li>

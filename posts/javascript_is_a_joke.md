@@ -1,10 +1,10 @@
-# Javascript is a Joke
+# JavaScript is a Joke
 
 He did it! He said the line!
 
 (this is not a serious blog post if you couldn't tell, adult language ahead)
 
-So anyway, it's a month in at my new job at Semgrep. Really fun so far (but don't tell them that). I get to research new CVEs that come out in open source software, which means I get to see all the new major disasters firsthand. On rare occasions you get to see the sophisticated new hacks against major libraries or whatever, but most of it is just access mismanagement, "isadmin" cookies, awful vuln descriptions and, as you may have guessed, JavaScript acting as the one thing standing between humanity and a prosperous world society. I'm not here to write a cool, detailed description of a CTF challenge solution or sophisticated hack. No, today is all just complaints.
+So anyway, it's a month in at my new job at Semgrep. Really fun so far. I get to research new CVEs that come out in open source software, which means I get to see all the new major disasters firsthand. On rare occasions you get to see the sophisticated new hacks against major libraries or whatever, but most of it is just access mismanagement, "isadmin" cookies, awful vuln descriptions and, as you may have guessed, JavaScript acting as the one thing standing between humanity and a prosperous world society. I'm not here to write a cool, detailed description of a CTF challenge solution or sophisticated hack. No, today is all just complaints.
 
 At some point I will do a post outlining some of the most god-awful CVE disclosures I have had the privilege to discover, but we'll save that for later. I have faith in the security research community bringing us quality content to laugh at in the coming months.
 
@@ -38,4 +38,4 @@ Oh, I got one more as a bonus for reading this far. Friendly reminder for how mu
 
 Some goobers wrote a script that literally uploads thousands of copies of the same package to npm. Apparently the goal was to inflate the dependent count on their main node packages, so they would have more credibility and "clout". It's not really harmful, just false advertising I guess. npm is a minefield when it comes to broken, malicous, or downright weird packages.
 
-Anyway, that's all I have for today. Maybe now is a good time to admit that I've been spelling it Javascript my entire life up until now. I feel like that should be correct. If your language isn't strongly typed, why should your name be?
+Anyway, that's all I have for today. Maybe now is a good time to admit that I've been writing it Javascript my entire life up until now. I feel like that should be correct. If the language isn't strongly typed, why should its name be?

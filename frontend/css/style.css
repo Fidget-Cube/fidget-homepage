@@ -13,13 +13,12 @@ img {
 a {
     color: white;
     text-align: center;
-    text-decoration: none;
+    text-decoration: underline;
     word-wrap: break-word;
 }
 
 a:hover {
-    /* color: cyan !important; */
-    text-decoration: underline;
+    color: cyan !important;
 }
 
 ul {
@@ -29,6 +28,8 @@ ul {
 
 li {
     padding: 0.8vw;
+    font-size: 1vw;
+    color: white;
 }
 
 p {
@@ -41,9 +42,9 @@ code {
     font-size: 1vw;
     background: white;
     color: black;
-    padding: 0px 0.3vw;
-    margin: 0px -0.3vw;
-    border-radius: 0.2vw;
+    padding: 0.1vw 0.1vw;
+    margin: 0px -0.1vw;
+    border-radius: 0.1vw;
 }
 
 h1 {
@@ -104,6 +105,7 @@ h2 {
 .contact_info a {
     font-family: monospace;
     font-size: 1.6vw;
+    text-decoration: none;
 }
 
 .links {
@@ -120,6 +122,7 @@ h2 {
 .links a {
     font-family: monospace;
     font-size: 1.6vw;
+    text-decoration: none;
 }
 
 /* Homepage */

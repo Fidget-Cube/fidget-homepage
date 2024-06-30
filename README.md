@@ -34,4 +34,4 @@ TODO:
 - Update post generation script
 - Improve error pages
 - Get this thing to actually work on mobile
-
+- Rotate daily songs every day

@@ -33,3 +33,5 @@ Hosting with Cloudflare:
 TODO:
 - Update post generation script
 - Improve error pages
+- Get this thing to actually work on mobile
+

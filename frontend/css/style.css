@@ -142,6 +142,11 @@ h3 {
 .boxes img {
     height: 31px;
     width: 88px;
+    transition: 0.2s;
+}
+
+.boxes img:hover {
+    transform: rotate(4deg)
 }
 
 /* Homepage */

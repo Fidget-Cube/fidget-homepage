@@ -12,7 +12,7 @@
                 <h2>
                     Category: JavaScript
                 </h2>
-                <ul>
+                <ul class="h2">
                     <li>
                         <?php include "../modules/posts/javascript_is_a_joke.html"?>
                     </li>

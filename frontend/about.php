@@ -10,7 +10,7 @@
         <div class="body">
             <div class="ctfs">
                 <h2>CTF Competitions</h2>
-                <ul>
+                <ul class="p">
                     <li>
                         <p>
                             <time datetime="2023-05-28T00:00:00+00:00">May 28 2023 -- </time>
@@ -65,7 +65,7 @@
             </div>
             <div class="talks">
                 <h2>Talks & Workshops</h2>
-                <ul>
+                <ul class="p">
                     <li>
                         <p>
                             <time datetime="2024-04-09T00:00:00+00:00">April 9th 2024 -- </time>

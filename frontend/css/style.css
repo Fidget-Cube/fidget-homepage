@@ -22,9 +22,14 @@ a:hover {
     color: cyan;
 }
 
+ol {
+    color: white;
+}
+
 ul {
     list-style-type: square;
     padding-left: 3vw;
+    color: white
     /*border: 5px solid white; */
 }
 
@@ -41,7 +46,18 @@ p {
 
 ol.p {
     font-size: 18px;
-    color: white;
+}
+
+ul.p {
+    font-size: 18px;
+}
+
+ul.h2 {
+    font-size: 30px;
+}
+
+ul.h3 {
+    font-size: 22px;
 }
 
 code {
@@ -115,6 +131,17 @@ h3 {
     justify-content: center;
     /*align-items: center;*/
     /*border: 5px solid white; */
+}
+
+/* Sidebar */
+
+.boxes {
+    padding-left: 3vw;
+}
+
+.boxes img {
+    height: 31px;
+    width: 88px;
 }
 
 /* Homepage */

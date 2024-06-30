@@ -9,10 +9,10 @@
         <?php include "../modules/header.html"?>
         <div class="body">
             <div class="all_posts">
-            <ul>
+            <ul class="h2">
                 <li>
                     <h2>2023</h2>
-                    <ul>
+                    <ul class="h3">
                         <li>
                             <h3>
                                 <time datetime="2023-08-27T22:41:47-07:00">Aug 27 2023 -- </time>

@@ -12,7 +12,7 @@
                 <h1>
                     Category: Reverse Engineering
                 </h1>
-                <ul>
+                <ul class="h2">
                     <li>
                         <?php include "../modules/posts/omgzip.html"?>
                     </li>

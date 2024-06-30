@@ -12,7 +12,7 @@
                 <h1>
                     Category: Cryptography
                 </h1>
-                <ul>
+                <ul class="h2">
                     <li>
                         <?php include "../modules/posts/provably_secure_2.html"?>
                     </li>

@@ -32,3 +32,4 @@ Hosting with Cloudflare:
 
 TODO:
 - Update post generation script
+- Improve error pages

@@ -2,13 +2,12 @@
 <html>
     <head>
         <title>&#387;u&#7433;&#670;&#596;&#592;H &#477;qn&#390;-&#647;&#477;&#387;p&#7433;&#8498;</title>
-        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
-        <meta name="description" content="Fidget-Cube Homepage">
-        <link rel="stylesheet" href="/css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Provably Secure 2">
+        <?php include "../modules/head.html"?>
     </head>
     <body>
         <?php include "../modules/header.html"?>
+        <div class="body">
         <div class="blog_post">
             <h1 id="provably-secure-2">Provably Secure 2</h1>
             <h2 id="now-with-less-cheese-still-pretty-simple-though-nc-mc-ax-31497-">Now with less cheese! Still pretty simple though. <code>nc mc.ax 31497</code></h2>
@@ -43,6 +42,7 @@
             <p>Using the other property of XOR we know about, we can simply XOR these two values together, and the result will be plaintext_a.  </p>
             <p><code>random_data_a (+) random_data_b (+) random_data_b (+) plaintext_a (+) random data_a = plaintext_a</code>  </p>
             <p>And we&#39;ve successfully recovered plaintext from a ciphertext message! If plaintext_a is 00000000000000000000000000000000, we know m0 was used to make the ciphertext, meaning the random bit is 0. If plaintext_a is ffffffffffffffffffffffffffffffff, the inverse is true, and the random bit is 1. </p>
+        </div>
         </div>
     </body>
 </html>

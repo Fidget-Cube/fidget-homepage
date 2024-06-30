@@ -2,20 +2,19 @@
 <html>
     <head>
         <title>&#387;u&#7433;&#670;&#596;&#592;H &#477;qn&#390;-&#647;&#477;&#387;p&#7433;&#8498;</title>
-        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
-        <meta name="description" content="Fidget-Cube Homepage">
-        <link rel="stylesheet" href="/css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="OmgZip">
+        <?php include "../modules/head.html"?>
     </head>
     <body>
         <?php include "../modules/header.html"?>
+        <div class="body">
         <div class="blog_post">
             <h1 id="omgzip">OMGzip</h1>
             <h2 id="omg-it-s-a-zip-">OMG, it&#39;s a .zip!</h2>
             <blockquote>
             <p>solves: 79<br>points: 56<br>challenge file(s): <a href="https://github.com/Fidget-Cube/write-ups/tree/main/2023/DEFCON_CTF_Qualifiers/OMGzip/omgzip">omgzip</a>, <a href="https://github.com/Fidget-Cube/write-ups/tree/main/2023/DEFCON_CTF_Qualifiers/OMGzip/data.tar.omgzip">data.tar.omgzip</a><br>solution file(s): <a href="https://github.com/Fidget-Cube/write-ups/tree/main/2023/DEFCON_CTF_Qualifiers/OMGzip/decompressor.py">decompressor.py</a><br>original challenge github: <a href="https://github.com/Nautilus-Institute/quals-2023/tree/main/omgzip">https://github.com/Nautilus-Institute/quals-2023/tree/main/omgzip</a>  </p>
             </blockquote>
-            <p>Just this past weekend, <a href="https://www.meetup.com/pacifichackers/">Pacific Hacker's Association</a> and <a href="https://www.meetup.com/hackmiami/">HackMiami</a> joined forces to compete in the <a href="https://quals.2023.nautilus.institute/index.html">DEFCON CTF Qualifiers</a>. The top 12 teams from this CTF go on to play the most competitive and challenging CTF in the world at DEFCON 31. Though, to be fair, our team wasn't of that caliber. We were able to solve 2 challenges (not counting the sanity checks) and finished in 92nd place, which is a great success by my standards! I was able to solve this one with the help of my friend Sam. It's a reverse engineering challenge, but with Python code instead of x86 assembly, which makes things much nicer.</p>
+            <p>Just this past weekend, <a href="https://www.meetup.com/pacifichackers/">Pacific Hackers Association</a> and <a href="https://www.meetup.com/hackmiami/">HackMiami</a> joined forces to compete in the <a href="https://quals.2023.nautilus.institute/index.html">DEFCON CTF Qualifiers</a>. The top 12 teams from this CTF go on to play the most competitive and challenging CTF in the world at DEFCON 31. Though, to be fair, our team wasn't of that caliber. We were able to solve 2 challenges (not counting the sanity checks) and finished in 92nd place, which is a great success by my standards! I was able to solve this one with the help of my friend Sam. It's a reverse engineering challenge, but with Python code instead of x86 assembly, which makes things much nicer.</p>
             <p>data.tar.omgzip is a .tar file compressed using a custom compression program called omgzip. The Python source code for omgzip is provided, so all you need to do is reverse the logic of the program and write your own decompression program.</p>
             <p>From the creator:<br>&quot;The original version of this challenge was pretty trivially solvable by ChatGPT, so I made it more difficult before its release and added a bunch of random comments and changed a bunch of variable names to make doing that take more time. We&#39;ll see if I was successful or not.&quot;</p>
             <p>The source code is pretty funny to read through. All the comments are basically worthless, and the creator even makes use of confusing naming conventions and data types (i.e.  <code>idx += True</code> ) in order to throw off any kind of LLM trying to understand the code logic automatically. Regardless, any human with a decent amount of programming experience shouldn&#39;t be thrown off by this as long as they examine the logic of the code itself, it&#39;s not overly complicated.</p>
@@ -33,6 +32,7 @@
             <p>In total, to decompress the file data.tar.omgzip, you need to perform 3 steps. First, remove the OMGZIP header. Second, use your custom decode() function within the Deflater class to decode the bits of the file into their original bytes. Third and finally, use your reversed compress() function to expand the repeated bits of the file. And that&#39;s it! Write the bytes to data.tar, un-tar the archive, and get the flag from the &quot;flag&quot; file!</p>
             <p>(Alternatively, just run decompressor.py on data.tar.omgzip. But that&#39;s just using my solution, and that&#39;s no fun right?)</p>
             <p>Addendum:<br>The implementation I wrote in Python is really slow, taking around 15-20 minutes to decompress the whole file. A faster implementation could be written in a faster language, like C++ or Rust. My friend Sam helped a lot with the completion of this challenge and wrote his own implementation of the algorithm in Rust. You can find his solution here: <a href="">LINK MISSING</a>.</p>
+        </div>
         </div>
     </body>
 </html>

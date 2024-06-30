@@ -2,13 +2,12 @@
 <html>
     <head>
         <title>&#387;u&#7433;&#670;&#596;&#592;H &#477;qn&#390;-&#647;&#477;&#387;p&#7433;&#8498;</title>
-        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
-        <meta name="description" content="Fidget-Cube Homepage">
-        <link rel="stylesheet" href="/css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="JavaScript is a Joke">
+        <?php include "../modules/head.html"?>
     </head>
     <body>
         <?php include "../modules/header.html"?>
+        <div class="body">
         <div class="blog_post">
             <h1 id="javascript-is-a-joke">JavaScript is a Joke</h1>
             <p>He did it! He said the line!</p>
@@ -22,10 +21,10 @@
             <p>The second thing I have to bring up is more of a cool fact! A cool fact that could totally crash your Javascript code without you even knowing it existed.</p>
             <p><code>{ toString: '' }</code> is impossible to automatically convert to a primitive! Why is this? <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#type_coercion">Type coercion</a>.</p>
             <p>In order to automatically convert an object (like <code>{}</code>) to a primitive value (like <code>3</code> or <code>"foobar"</code>), JavaScript tries 3 things:</p>
-            <ol type="1">
-            <li>calling the object&#x2019;s <code>[@@toPrimitive]()</code> function, which <code>{ toString: '' }</code> does not have.</li>
-            <li>calling <code>{ toString: '' }.valueOf()</code>, which returns {} itself, which is not a primitive so it&#x2019;s ignored.</li>
-            <li>calling <code>{ toString: '' }.toString()</code>, which <em>would</em> return <code>"[object Object]"</code>, but we overwrote the <code>toString</code> method with an empty string instead, so it&#x2019;s no longer a function.</li>
+            <ol type="1" class="p">
+            <li><p>calling the object&#x2019;s <code>[@@toPrimitive]()</code> function, which <code>{ toString: '' }</code> does not have.</p></li>
+            <li><p>calling <code>{ toString: '' }.valueOf()</code>, which returns {} itself, which is not a primitive so it&#x2019;s ignored.</p></li>
+            <li><p>calling <code>{ toString: '' }.toString()</code>, which <em>would</em> return <code>"[object Object]"</code>, but we overwrote the <code>toString</code> method with an empty string instead, so it&#x2019;s no longer a function.</p></li>
             </ol>
             <p>If all 3 attempts fail, a TypeError is thrown! This can lead to some cute lil <a href="https://github.com/advisories/GHSA-hhr9-rh25-hvf9">DoS vulns</a>.</p>
             <p>Now for the final thing, and this one takes the cake. Have any of y&#x2019;all used <a href="https://github.com/patriksimek/vm2">vm2</a> before? It&#x2019;s a project attempting to take Node.js&#x2019; built-in <code>vm</code> module and make it secure! Mainly by attempting to patch every single hole imaginable, and there were a lot. Admittedly, their tenacity and determination was commendable, but ultimately, JavaScript won. I didn&#x2019;t work on the project, so I don&#x2019;t know all the details, but from a little bit of research it appears that Node was intercepting calls inside the vm before they could be proxied or overwritten. That sounds to me like patching every hole in a bucket only for the bucket to tip over.</p>
@@ -34,6 +33,7 @@
             <p>Oh, I got one more as a bonus for reading this far. Friendly reminder for how much garbage there is on npm: https://www.npmjs.com/package/npm-ghost-726?activeTab=code</p>
             <p>Some goobers wrote a script that literally uploads thousands of copies of the same package to npm. Apparently the goal was to inflate the dependent count on their main node packages, so they would have more credibility and &#x201C;clout&#x201D;. It&#x2019;s not really harmful, just false advertising I guess. npm is a minefield when it comes to broken, malicous, or downright weird packages.</p>
             <p>Anyway, that&#x2019;s all I have for today. Maybe now is a good time to admit that I&#x2019;ve been writing it Javascript my entire life up until now. I feel like that should be correct. If the language isn&#x2019;t strongly typed, why should its name be?</p>
+        </div>
         </div>
     </body>
 </html>

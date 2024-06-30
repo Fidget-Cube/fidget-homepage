@@ -2,98 +2,109 @@
 <html>
     <head>
         <title>&#387;u&#7433;&#670;&#596;&#592;H &#477;qn&#390;-&#647;&#477;&#387;p&#7433;&#8498;</title>
-        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
-        <meta name="description" content="Fidget-Cube Homepage">
-        <link rel="stylesheet" href="/css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="About Fidget-Cube">
+        <?php include "./modules/head.html"?>
     </head>
     <body>
         <?php include "./modules/header.html"?>
-        <div class="about">
+        <div class="body">
             <div class="ctfs">
-                <h2 id="title">CTF Competitions</h2>
-                <ul id="description">
+                <h2>CTF Competitions</h2>
+                <ul>
                     <li>
-                        <span>
-                            <time datetime="2023-02-08T00:00:00+00:00">May 28 2023 -- </time>
+                        <p>
+                            <time datetime="2023-05-28T00:00:00+00:00">May 28 2023 -- </time>
                             <a href="https://quals.2023.nautilus.institute">
                                 Defcon CTF 2023 Qualifiers
                             </a>
-                            <p>
-                                # 92nd place (PacMia)
-                            </p>
-                        </span>
+                            <br>
+                            # 92nd place (PacMia)
+                        </p>
                     </li>
                     <li>
-                        <span>
-                            <time datetime="2023-02-08T00:00:00+00:00">Apr 16 2023 -- </time>
+                        <p>
+                            <time datetime="2023-04-16T00:00:00+00:00">Apr 16 2023 -- </time>
                             <a href="https://cyberskyline.com/hosted_events/ncl-spring-2023">
                                 National Cyber League
                             </a>
-                            <p>
-                                # 38th place individual, 5th place team (Bay Cyber Attack)
-                            </p>
-                        </span>
+                            <br>
+                            # 38th place individual, 5th place team (Bay Cyber Attack)
+                        </p>
                     </li>
                     <li>
-                        <span>
-                            <time datetime="2023-02-08T00:00:00+00:00">Feb 05 2023 -- </time>
+                        <p>
+                            <time datetime="2023-02-05T00:00:00+00:00">Feb 05 2023 -- </time>
                             <a href="https://2023.ctf.dicega.ng/scores">
                                 DiceCTF 2023
                             </a>
-                            <p>
-                                # 108th place (Bay Cyber Attack)
-                            </p>
-                        </span>
+                            <br>
+                            # 108th place (Bay Cyber Attack)
+                        </p>
                     </li>
                     <li>
-                        <span>
-                            <time datetime="2023-02-08T00:00:00+00:00">Nov 06 2022 -- </time>
+                        <p>
+                            <time datetime="2022-11-06T00:00:00+00:00">Nov 06 2022 -- </time>
                             <a href="https://cyberskyline.com/hosted_events/ncl-fall-2022">
                                 National Cyber League
                             </a>
-                            <p>
-                                # 46th place individual, 3rd place team (Bay Cyber Attack)
-                            </p>
-                        </span>
+                            <br>
+                            # 46th place individual, 3rd place team (Bay Cyber Attack)
+                        </p>
                     </li>
                     <li>
-                        <span>
-                            <time datetime="2023-02-08T00:00:00+00:00">Aug 14 2022 -- </time>
+                        <p>
+                            <time datetime="2022-08-14T00:00:00+00:00">Aug 14 2022 -- </time>
                             <a href="https://twitter.com/icsctf/status/1560515008760582145?cxt=HHwWgsC4vb2IiKgrAAAA">
                                 Red Alert CTF (Defcon 30, ICS)
                             </a>
-                            <p>
-                                # 1st place (Teamxx)
-                            </p>
-                        </span>
+                            <br>
+                            # 1st place (Teamxx)
+                        </p>
                     </li>
                 </ul>
             </div>
             <div class="talks">
-                <h2 id="title">Talks & Workshops</h2>
-                <ul id="description">
+                <h2>Talks & Workshops</h2>
+                <ul>
                     <li>
-                        <span>
-                            <time datetime="2023-02-08T00:00:00+00:00">May 06 2023 -- </time>
+                        <p>
+                            <time datetime="2024-04-09T00:00:00+00:00">April 9th 2024 -- </time>
+                            <a href="https://www.rsaconference.com/library/presentation/usa/2024/kubernetes%20security%20attacking%20and%20defending%20modern%20infrastructure">
+                                Kubernetes Security: Attacking and Defending Modern Infrastructure
+                            </a>
+                            <br>
+                            @ RSA Conference
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <time datetime="2024-04-09T00:00:00+00:00">April 9th 2024 -- </time>
+                            <a href="https://docs.google.com/presentation/d/15K0yL3NYU8YlBF2rVH13LANpoWdU3EufGUoC0xdLsZ4/edit?usp=sharing">
+                                How To Write a Security Disclosure
+                            </a>
+                            <br>
+                            @ RSA Conference (Dark Arts Village Sandbox)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <time datetime="2023-05-06T00:00:00+00:00">May 06 2023 -- </time>
                             <a href="https://docs.google.com/presentation/d/1K5qpze8wsbEzxbhtLm8vvYzCdPvLjxrj06aWLW8Zlxk/edit?usp=sharing">
                                 Defcon CTF Lightning Talk
                             </a>
-                            <p>
-                                @ Pacific Hackers Meetup
-                            </p>
-                        </span>
+                            <br>
+                            @ Pacific Hackers Meetup
+                        </p>
                     </li>
                     <li>
-                        <span>
-                            <time datetime="2023-02-08T00:00:00+00:00">Apr 26 2023 -- </time>
+                        <p>
+                            <time datetime="2023-04-26T00:00:00+00:00">Apr 26 2023 -- </time>
                             <a href="https://docs.google.com/presentation/d/1ZKXV8ylsA1r5_gi-EiIETfbmD3EHsJfwc7dYX1qnzPg/edit?usp=sharing">
                                 Introduction to Smart Contract Hacking
                             </a>
-                            <p>
-                                @ RSA Conference (Dark Arts Village Sandbox)
-                            </p>
-                        </span>
+                            <br>
+                            @ RSA Conference (Dark Arts Village Sandbox)
+                        </p>
                     </li>
                 </ul>
             </div>

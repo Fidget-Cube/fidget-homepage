@@ -2,10 +2,8 @@
 <html>
     <head>
         <title>???</title>
-        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
         <meta name="description" content="???">
-        <link rel="stylesheet" href="/css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <?php include "../modules/head.html"?>
     </head>
     <body>
         <?php include "../modules/header.html"?>

@@ -9,6 +9,9 @@ Hosting with Nginx:
     - `index index.html index.htm` -> `index index.php index.html index.htm`
     - Uncomment object labeled as `location ~ \.php$ {`
     - Re-comment line `fastcgi_pass 127.0.0.1:9000`
+- Set environment variables:
+    - Fill `.env`
+    - `chmod +x setenv.sh && ./setenv.sh`
 - Copy frontend folder to /var/www/html (or system equivalent default webroot)
 - `sudo systemctl restart php7.4-fpm`
 - `sudo nginx -t` and `sudo systemctl restart nginx`
@@ -27,3 +30,5 @@ Hosting with Cloudflare:
  - https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-guide/local/
  - https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-guide/local/as-a-service/linux/
 
+TODO:
+- Update post generation script

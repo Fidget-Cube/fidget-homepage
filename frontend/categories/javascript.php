@@ -9,9 +9,10 @@
         <?php include "../modules/header.html"?>
         <div class="body">
             <div class="feed">
-                <h2>
+                <br>
+                <h1>
                     Category: JavaScript
-                </h2>
+                </h1>
                 <ul class="h2">
                     <li>
                         <?php include "../modules/posts/javascript_is_a_joke.html"?>

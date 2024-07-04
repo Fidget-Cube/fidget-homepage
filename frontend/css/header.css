@@ -68,12 +68,68 @@ p.divider {
     grid-area: boxes;
     padding: 10px;
     background-color: black;
+    display: grid;
+    gap: 0;
+    grid-template:
+        'webring webring webring webring'
+        'webring webring webring webring'
+        '. . . .'
+        '. . . .'
+        '. . . .'
+        '. . . .';
+    grid-auto-rows: 31px;
+    grid-auto-columns: 88px;
+    justify-items: center;
+    align-items: center;
 }
 
 #webring {
-    width: 300px;
-    height: 70px;
+    grid-area: webring;
+    width: 352px;
+    height: 62px;
+}
+
+#webring iframe {
+    width: 352px;
+    height: 62px;
     border: 0;
+}
+
+/* Boxies */
+
+img.box {
+    height: 31px;
+    width: 88px;
+}
+
+@keyframes jump {
+    0% {transform: matrix(1, 0, 0, 1, 0, 0);}
+    10% {transform: matrix(1, -0.05, 0.05, 1, 0, -29);}
+    15% {transform: matrix(0.99, -0.1, 0.1, 0.99, 0, -38);}
+	20% {transform: matrix(0.99, -0.15, 0.15, 0.99, 0, -40);}
+    25% {transform: matrix(0.98, -0.2, 0.2, 0.98, 0, -38);}
+    30% {transform: matrix(0.98, -0.25, 0.25, 0.98, 0, -29);}
+    40% {transform: matrix(0.97, -0.3, 0.3, 0.97, 0, -11);}
+	45% {transform: matrix(0.98, -0.2, 0.2, 1, 0.98, -18);}
+    50% {transform: matrix(0.99, -0.1, 0.1, 0.99, 0, -25);}
+	55% {transform: matrix(1,  0, 0, 1, 0, -28);}
+    60% {transform: matrix(0.99, 0.1, -0.1, 0.99, 0, -25);}
+    65% {transform: matrix(0.98, 0.2, -0.2, 0.98, 0, -18);}
+	70% {transform: matrix(0.97, 0.3, -0.3, 0.97, 0, -11);}
+    75% {transform: matrix(0.99, 0.1, -0.1, 0.99, 0, -10);}
+    80% {transform: matrix(0.99, -0.1, 0.1, 0.99, 0, -5);}
+    85% {transform: matrix(1, 0, 0, 1, 0, -6);}
+    90% {transform: matrix(0.99, 0.1, -0.1, 0.99, 0, -4);}
+    92% {transform: matrix(1, 0, 0, 1, 0, -2);}
+    95% {transform: matrix(1, 0, 0, 1, 0, -4);}
+    98% {transform: matrix(1, 0, 0, 1, 0, -1);}
+	100% {transform: matrix(1, 0, 0, 1, 0, 0);}
+}
+
+.box-container:hover img {
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-timing-function: linear;
 }
 
 /* Non-Mobile Config*/
@@ -95,6 +151,14 @@ p.divider {
     #music {
         width: 17vw;
         justify-self: left;
+    }
+
+    #boxes {
+        display: grid;
+        grid-template:
+            '. . . webring webring webring webring . . .'
+            '. . . webring webring webring webring . . .'
+            '. . . . . . . . . .';
     }
 }
 
@@ -130,6 +194,7 @@ p.divider {
 }
 
 #audioplayer-top-row {
+    grid-area: top;
     width: 100%;
     display: flex;
     align-items: center;
@@ -137,6 +202,7 @@ p.divider {
 }
 
 #audioplayer-bottom-row {
+    grid-area: bottom;
     width: 100%;
     display: flex;
     align-items: center;
@@ -183,22 +249,6 @@ path {
 
 /* End Audio Player Config */
 
-/* Boxies */
-
-.box {
-    padding-left: 3vw;
-}
-
-.box img {
-    height: 31px;
-    width: 88px;
-    transition: 0.2s;
-}
-
-.box img:hover {
-    transform: rotate(4deg)
-}
-
 /* The EXTRA Small Config */
 
 @media only screen and (max-width: 600px) {
@@ -216,11 +266,26 @@ path {
     }
 
     #boxes {
-        width: 150px;
-        height: 35px;
+        display: grid;
+        grid-template:
+            'webring webring'
+            '. .'
+            '. .'
+            '. .'
+            '. .'
+            '. .'
+            '. .'
+            '. .'
+            '. .';
     }
 
     #webring {
+        grid-area: webring;
+        width: 176px;
+        height: 31px;
+    }
+
+    #webring iframe {
         transform: 0.5;
         transform-origin: 0 0;
         -ms-zoom: 0.5;

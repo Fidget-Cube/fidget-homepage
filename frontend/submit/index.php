@@ -7,11 +7,13 @@
     </head>
     <body>
         <?php include "../modules/header.html"?>
-        <div class="submit_form">
-            <form action="/submit/result.php" method="POST">
-                <input type="text" name="value"><br>
-                <input type="submit" value="Submit">
-            </form>
+        <div class="body">
+            <div class="submit_form">
+                <form action="/submit/result.php" method="POST">
+                    <input class="p" type="text" name="value"><br>
+                    <input class="p" type="submit" value="Submit">
+                </form>
+            </div>
         </div>
     </body>
 </html>

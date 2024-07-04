@@ -1,44 +1,45 @@
 <div class="header">
-    <div id="uppercontent">
-        <div id="coolsites">
-        </div>
-        <a href="/" id="puzzle">
-            <img src="/img/puzzle-alt.png" alt="">
-        </a>
-        <div id="audioplayer">
-            <h3>
-                Today's Music
-            </h3>
-            <p>
-                The Norwood Suite Main Theme -- Cosmo D
-            </p>
-            <p>
-                <a href="https://www.youtube.com/watch?v=BajS3cugInY" target="_blank">Listen on YouTube</a>
-            </p>
-            <div id="audioplayer-container">
-                <link rel="stylesheet" href="/css/audio-slider.css" type="text/css" media="all">
-                <audio src="/audio/TheNorwoodSuiteOSTMainTheme.mp3" preload="metadata"></audio>
-                <button id="play-icon" class="audio"></button>
-                <span id="current-time" class="time p">0:00</span>
-                <input type="range" id="seek-slider" max="100" value="0">
-                <span id="duration" class="time p">0:00</span>
-                <output id="volume-output" class="p">100</output>
-                <input type="range" id="volume-slider" max="100" value="100">
-                <button id="mute-icon" class="audio"></button>
-            </div>
-            <script type="text/javascript" src="/js/playbutton.js"></script>
-        </div>
+    <link rel="stylesheet" href="/css/header.css" type="text/css" media="all">
+    <div id="fact">
+        <p>hello how are you this is a test</p>
     </div>
-    <p id="navline">
-        <a class="hidden" href="/submit">???</a>
-        
-        <a href="mailto:max@fidgetcube.dev">Email</a>
-        |
-        <a href="https://github.com/Fidget-Cube" target="_blank">Github</a>
-        |
-        <a href="/posts/directory.php">All Posts</a>
-        
-        <a class="hidden" href="/submit">???</a>
-    </p>
-    <iframe src="https://ring.koek.club/site/5/button.html" width="300" height="70" frameBorder="0"></iframe>
+    <div id="puzzle">
+        <a href="/"><img src="/img/puzzle-alt.png" alt=""></a>
+    </div>
+    <div id="music">
+        <h3>
+            Today's Music
+        </h3>
+        <p>
+            The Norwood Suite Main Theme -- Cosmo D
+        </p>
+        <p>
+            <a href="https://www.youtube.com/watch?v=BajS3cugInY" target="_blank">Listen on YouTube</a>
+        </p>
+        <div id="audioplayer-container">
+            <link rel="stylesheet" href="/css/audio-slider.css" type="text/css" media="all">
+            <audio src="/audio/TheNorwoodSuiteOSTMainTheme.mp3" preload="metadata"></audio>
+            <button id="play-icon" class="audio"></button>
+            <span id="current-time" class="time p">0:00</span>
+            <input type="range" id="seek-slider" max="100" value="0">
+            <span id="duration" class="time p">0:00</span>
+            <output id="volume-output" class="p">100</output>
+            <input type="range" id="volume-slider" max="100" value="100">
+            <button id="mute-icon" class="audio"></button>
+        </div>
+        <script type="text/javascript" src="/js/playbutton.js"></script>
+    </div>
+    <div id="navline">
+        <p><a class="hidden" href="/submit">???</a></p>
+        <p><a href="mailto:max@fidgetcube.dev">Email</a></p>
+        <p class="divider">|</p>
+        <p><a href="https://github.com/Fidget-Cube" target="_blank">Github</a></p>
+        <p class="divider">|</p>
+        <p><a href="/posts/directory.php">All Posts</a></p>
+        <p><a class="hidden" href="/submit">???</a></p>
+        </p>
+    </div>
+    <div id="boxes">
+        <iframe id="webring" src="https://ring.koek.club/site/5/button.html"></iframe>
+    </div>
 </div>

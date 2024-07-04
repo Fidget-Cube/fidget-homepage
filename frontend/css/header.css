@@ -1,0 +1,272 @@
+/* Header */
+
+.header {
+    margin: auto;
+    height: auto;
+    width: 80%;
+    display: grid;
+    gap: 0;
+    grid-template:
+        'puzzle'
+        'fact'
+        'music'
+        'navline'
+        'boxes';
+    justify-items: center;
+    align-items: center;
+}
+
+#fact {
+    grid-area: fact;
+    padding: 10px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#puzzle {
+    grid-area: puzzle;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#puzzle img {
+    width: 100%;
+    height: auto;
+}
+
+#music {
+    grid-area: music;
+    padding: 10px;
+    background-color: black;
+}
+
+#navline {
+    grid-area: navline;
+    background-color: black;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#navline p {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+p.divider {
+    color: black;
+}
+
+#boxes {
+    grid-area: boxes;
+    padding: 10px;
+    background-color: black;
+}
+
+#webring {
+    width: 300px;
+    height: 70px;
+    border: 0;
+}
+
+/* Non-Mobile Config*/
+
+@media only screen and (min-width: 1200px) {
+    .header {
+        display: grid;
+        grid-template:
+            'fact puzzle music'
+            'navline navline navline'
+            'boxes boxes boxes';
+    }
+    
+    #fact {
+        width: 17vw;
+        justify-self: right;
+    }
+
+    #music {
+        width: 17vw;
+        justify-self: left;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    #navline {
+        flex-direction: row;
+    }
+
+    #navline p {
+        padding: 30px 10px;
+    }
+
+    p.divider {
+        color: white;
+    }
+}
+
+/* Audio Player Config */
+
+#audioplayer-container {
+    --seek-before-width: 0%;
+    --volume-before-width: 100%;
+    --buffered-width: 0%;
+    width: 100%;
+    max-width: 400px;
+    height: 10%;
+    border: 5px double white;
+    border-radius: 5px;
+}
+
+button.audio {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+button#play-icon {
+    float: left;
+    margin: 10px 2.5%;
+}
+
+button#mute-icon {
+    margin: 0 2.5% 10px;
+}
+
+path {
+    stroke: white;
+}
+
+.time {
+    width: 37px;
+    text-align: center;
+    margin: 15px 1%;
+    float: left;
+}
+
+#seek-slider {
+    margin: 15px 2.5%;
+}
+
+#volume-output {
+    width: 32px;
+    text-align: center;
+    margin: 5px 2.5% 5px 5%;
+    float: left;
+    clear: left;
+}
+
+#volume-slider {
+    margin: 5px 2.5%;
+    width: 58%;
+}
+
+#volume-slider::before {
+    width: var(--volume-before-width);
+}
+
+/* Skooshed Config */
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    #seek-slider {
+        width: 5.6vw;
+    }
+
+    #volume-slider {
+        width: 8.5vw;
+    }
+}
+
+/* End Audio Player Config */
+
+/* Boxies */
+
+.box {
+    padding-left: 3vw;
+}
+
+.box img {
+    height: 31px;
+    width: 88px;
+    transition: 0.2s;
+}
+
+.box img:hover {
+    transform: rotate(4deg)
+}
+
+/* The EXTRA Small Config */
+
+@media only screen and (max-width: 600px) {
+    #puzzle {
+        max-width: 350px;
+    }
+
+    #navline p {
+        font-size: 15px;
+    }
+
+    #audioplayer-container {
+        max-width: 190px;
+    }
+
+    button.audio {
+        width: 15px;
+        height: 15px;
+    }
+
+    button#play-icon {
+        float: left;
+        margin: 5px 2.5%;
+    }
+    
+    button#mute-icon {
+        margin: 4px 2.5% 5px;
+    }
+
+    .time {
+        width: 18px;
+        margin: 7px 1% 4px 1%;
+    }
+
+    #seek-slider {
+        margin: 3px 2.5% 1px 2.5%;
+    }
+
+    #volume-slider {
+        margin: 0 2.5%;
+    }
+
+    #volume-output {
+        width: 16px;
+        margin: 3px 2.5% 5px 5%;
+    }
+
+    #boxes {
+        width: 150px;
+        height: 35px;
+    }
+
+    #webring {
+        transform: 0.5;
+        transform-origin: 0 0;
+        -ms-zoom: 0.5;
+        -moz-transform: scale(0.5);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.5);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: 0 0;
+    }
+}

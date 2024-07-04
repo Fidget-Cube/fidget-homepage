@@ -7,8 +7,8 @@
     </head>
     <body>
         <?php include "../modules/header.html"?>
-        <div>
-            <p style="text-align: center; word-wrap: break-word;">
+        <div class="body">
+            <p>
             <?php
                 $message = "<SECRETMESSAGE>";
                 $key = "<SECRETKEY>";

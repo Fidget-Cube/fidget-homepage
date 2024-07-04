@@ -20,6 +20,7 @@
                         <?php include "./modules/posts/provably_secure_2.html"?>
                     </li>
                 </ul>
+                <h3 class="linked"><a href="/posts/directory.php">See All Posts --></a></h3>
             </div>
             <?php include "./modules/sidebar.html"?>
         </div>

@@ -15,5 +15,6 @@
                 </form>
             </div>
         </div>
+        <?php include "../modules/footer.html"?>
     </body>
 </html>

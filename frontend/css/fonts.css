@@ -1,0 +1,24 @@
+@font-face {
+    font-family: pixeloidSans;
+    src: url('/fonts/PixeloidSans-mLxMm.ttf');
+}
+
+@font-face {
+    font-family: pixeloidSans;
+    src: url('/fonts/PixeloidSansBold-PKnYd.ttf');
+    font-weight: bold;
+}
+
+#w3schools {
+    font-weight: normal;
+}
+
+#fauux {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+#ynoproject {
+    font-family: pixeloidSans;
+    font-weight: normal;
+}

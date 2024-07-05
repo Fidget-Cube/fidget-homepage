@@ -35,3 +35,30 @@ TODO:
 - Improve error pages
 - Rotate daily songs every day
 - Keep header static and update body while browsing
+- Add and about page
+- Add a guestbook
+
+LINKS TODO:
+- https://blackfogzine.org/ (make button for)
+- https://corru.observer/widescreen/?path=/ (put under sidebar)
+- https://passwordpassword.online (put under sidebar and make button and credit https://nikita-kryukov.itch.io/)
+- https://lainzine.org/all-releases/lainzine06.pdf (make button for)
+- https://mrsmoe.neocities.org/
+- https://halcybutton.neocities.org/
+- https://tetrisk-lair.neocities.org/
+- https://elite784.online/
+- https://uncannyvalley.neocities.org/
+- https://mebious.neocities.org/
+- https://y2k.neocities.org/
+- https://yesterweb.org/
+- https://ninacti0n.neocities.org/
+- https://whitedesert.neocities.org/
+- https://suyu.neocities.org/
+- https://blinkies.neocities.org/
+- https://castlecyberskull.neocities.org/
+- https://whereareyou.neocities.org/
+- https://blackwings.neocities.org/
+- https://incessantpain.neocities.org/
+- https://the1980underground.neocities.org/
+
+https://www.youtube.com/watch?v=be_Ms3nVG10

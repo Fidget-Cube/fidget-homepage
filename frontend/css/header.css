@@ -77,10 +77,13 @@ p.divider {
         '. . . .'
         '. . . .'
         '. . . .';
-    grid-auto-rows: 31px;
-    grid-auto-columns: 88px;
     justify-items: center;
     align-items: center;
+}
+
+.box-container {
+    height: 31px;
+    width: 88px;
 }
 
 #webring {
@@ -100,6 +103,7 @@ p.divider {
 img.box {
     height: 31px;
     width: 88px;
+    will-change: transform;
 }
 
 @keyframes jump {

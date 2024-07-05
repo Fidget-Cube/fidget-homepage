@@ -34,5 +34,6 @@
             <p>Addendum:<br>The implementation I wrote in Python is really slow, taking around 15-20 minutes to decompress the whole file. A faster implementation could be written in a faster language, like C++ or Rust. My friend Sam helped a lot with the completion of this challenge and wrote his own implementation of the algorithm in Rust. You can find his solution here: <a href="">LINK MISSING</a>.</p>
         </div>
         </div>
+        <?php include "../modules/footer.html"?>
     </body>
 </html>

@@ -44,5 +44,6 @@
             <p>And we&#39;ve successfully recovered plaintext from a ciphertext message! If plaintext_a is 00000000000000000000000000000000, we know m0 was used to make the ciphertext, meaning the random bit is 0. If plaintext_a is ffffffffffffffffffffffffffffffff, the inverse is true, and the random bit is 1. </p>
         </div>
         </div>
+        <?php include "../modules/footer.html"?>
     </body>
 </html>

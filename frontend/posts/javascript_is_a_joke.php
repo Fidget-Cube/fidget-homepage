@@ -35,5 +35,6 @@
             <p>Anyway, that&#x2019;s all I have for today. Maybe now is a good time to admit that I&#x2019;ve been writing it Javascript my entire life up until now. I feel like that should be correct. If the language isn&#x2019;t strongly typed, why should its name be?</p>
         </div>
         </div>
+        <?php include "../modules/footer.html"?>
     </body>
 </html>

@@ -24,5 +24,6 @@
             </div>
             <?php include "./modules/sidebar.html"?>
         </div>
+        <?php include "./modules/footer.html"?>
     </body>
 </html>

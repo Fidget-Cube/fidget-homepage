@@ -9,6 +9,18 @@
     font-weight: bold;
 }
 
+/* https://www.fontspace.com/mistis-fonts */
+@font-face {
+    font-family: quiteMagical;
+    src: url('/fonts/QuiteMagicalRegular-8VA2.ttf')
+}
+
+/* https://www.fontspace.com/agasilva */
+@font-face {
+    font-family: auldMagick;
+    src: url('/fonts/Auldmagick-gvdp.ttf');
+}
+
 #w3schools {
     font-weight: normal;
 }
@@ -21,4 +33,10 @@
 #ynoproject {
     font-family: pixeloidSans;
     font-weight: normal;
+}
+
+#gandalf {
+    font-family: auldMagick;
+    font-weight: normal;
+    font-size: 2em;
 }

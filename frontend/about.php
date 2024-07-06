@@ -8,105 +8,13 @@
     <body>
         <?php include "./modules/header.html"?>
         <div class="body">
-            <div class="ctfs">
-                <h2>CTF Competitions</h2>
-                <ul class="p">
-                    <li>
-                        <p>
-                            <time datetime="2023-05-28T00:00:00+00:00">May 28 2023 -- </time>
-                            <a href="https://quals.2023.nautilus.institute">
-                                Defcon CTF 2023 Qualifiers
-                            </a>
-                            <br>
-                            # 92nd place (PacMia)
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <time datetime="2023-04-16T00:00:00+00:00">Apr 16 2023 -- </time>
-                            <a href="https://cyberskyline.com/hosted_events/ncl-spring-2023">
-                                National Cyber League
-                            </a>
-                            <br>
-                            # 38th place individual, 5th place team (Bay Cyber Attack)
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <time datetime="2023-02-05T00:00:00+00:00">Feb 05 2023 -- </time>
-                            <a href="https://2023.ctf.dicega.ng/scores">
-                                DiceCTF 2023
-                            </a>
-                            <br>
-                            # 108th place (Bay Cyber Attack)
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <time datetime="2022-11-06T00:00:00+00:00">Nov 06 2022 -- </time>
-                            <a href="https://cyberskyline.com/hosted_events/ncl-fall-2022">
-                                National Cyber League
-                            </a>
-                            <br>
-                            # 46th place individual, 3rd place team (Bay Cyber Attack)
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <time datetime="2022-08-14T00:00:00+00:00">Aug 14 2022 -- </time>
-                            <a href="https://twitter.com/icsctf/status/1560515008760582145?cxt=HHwWgsC4vb2IiKgrAAAA">
-                                Red Alert CTF (Defcon 30, ICS)
-                            </a>
-                            <br>
-                            # 1st place (Teamxx)
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="talks">
-                <h2>Talks & Workshops</h2>
-                <ul class="p">
-                    <li>
-                        <p>
-                            <time datetime="2024-04-09T00:00:00+00:00">April 9th 2024 -- </time>
-                            <a href="https://www.rsaconference.com/library/presentation/usa/2024/kubernetes%20security%20attacking%20and%20defending%20modern%20infrastructure">
-                                Kubernetes Security: Attacking and Defending Modern Infrastructure
-                            </a>
-                            <br>
-                            @ RSA Conference
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <time datetime="2024-04-09T00:00:00+00:00">April 9th 2024 -- </time>
-                            <a href="https://docs.google.com/presentation/d/15K0yL3NYU8YlBF2rVH13LANpoWdU3EufGUoC0xdLsZ4/edit?usp=sharing">
-                                How To Write a Security Disclosure
-                            </a>
-                            <br>
-                            @ RSA Conference (Dark Arts Village Sandbox)
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <time datetime="2023-05-06T00:00:00+00:00">May 06 2023 -- </time>
-                            <a href="https://docs.google.com/presentation/d/1K5qpze8wsbEzxbhtLm8vvYzCdPvLjxrj06aWLW8Zlxk/edit?usp=sharing">
-                                Defcon CTF Lightning Talk
-                            </a>
-                            <br>
-                            @ Pacific Hackers Meetup
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <time datetime="2023-04-26T00:00:00+00:00">Apr 26 2023 -- </time>
-                            <a href="https://docs.google.com/presentation/d/1ZKXV8ylsA1r5_gi-EiIETfbmD3EHsJfwc7dYX1qnzPg/edit?usp=sharing">
-                                Introduction to Smart Contract Hacking
-                            </a>
-                            <br>
-                            @ RSA Conference (Dark Arts Village Sandbox)
-                        </p>
-                    </li>
-                </ul>
+            <div class="bio">
+                <p>My name is <em style="font-style: normal; color: cyan;">Fidget-Cube</em>. Welcome to my <em style="font-style: normal; color: deeppink;">headspace</em>, fellow onieronaut :)</p>
+                <p>I'm a computer and internet nerd that loves all things <em>abstract</em> and <em style="font-style: normal; color: darkgray;">dark</em>. I'm based out of the west coast of the United States, and am an active member of Pacific Hackers, a grassroots hacker community focused on education. We love building and breaking things together.</p>
+                <p>This site is a repository for my portfolio, thoughts, interests, puzzles and ideas. Take what you like and leave the rest</p>
+                <p>In case you couldn't tell, I'm a big fan of cyberpunk media, heavily sampled music, trippy indie games, mental health and freedom of expression. I was partially inspired to make this website by the <em style="font-style: normal; color: #d2738a;">Absurdism World</em> peeps, be sure to check out their websites as well!</p>
+                <p>Still here? I'm flattered. If you want you can sign my guestbook below, I'd love to see if people actually visit my webpage. If not, that's okay too. I'm just glad that my digital <em style="font-style: normal; color: midnightblue;">ghost</em> has been able to form a nook within your consciousness, if briefly, so I might be able to exist a bit longer...</p>
+                <p>TODO: Make Guestbook</p>
             </div>
         </div>
         <?php include "./modules/footer.html"?>

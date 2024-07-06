@@ -34,9 +34,11 @@ TODO:
 - Update post generation script
 - Improve error pages
 - Rotate daily songs every day
+- Rotate daily fact every day
 - Keep header static and update body while browsing
-- Add and about page
 - Add a guestbook
+- Update background gif
+- Fix volume output size
 
 LINKS TODO:
 - https://blackfogzine.org/ (make button for)
@@ -60,5 +62,3 @@ LINKS TODO:
 - https://blackwings.neocities.org/
 - https://incessantpain.neocities.org/
 - https://the1980underground.neocities.org/
-
-https://www.youtube.com/watch?v=be_Ms3nVG10

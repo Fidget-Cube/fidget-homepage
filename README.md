@@ -1,6 +1,13 @@
 # My Personal Website
 
-Currently a static webserver with php.
+Currently a static webserver run on a LEMP stack (Linux, Nginx, MySQL, PHP).
+
+Setting Up Database:
+- [Install MariaDB](https://mariadb.com/kb/en/where-to-download-mariadb/)
+- Run the MariaDB server, and make sure to set a strong root password
+- Create a new database on the MariaDB server named "website"
+- Run `mysql -u root -p website < database/backup.sql`
+- Finally, add your database root password in the form `DB_ROOT_PW="your_root_password"` to a file named `.env` in the root directory of the project
 
 Hosting with Nginx:
 - `sudo apt install nginx`
@@ -35,7 +42,7 @@ TODO:
 - Improve error pages
 - Rotate daily songs every day
 - Rotate daily fact every day
-- Keep header static and update body while browsing
+- Keep header static and update body while browsing (Try using Astro https://astro.build/)
 - Add a guestbook
 - Update background gif
 - Fix volume output size

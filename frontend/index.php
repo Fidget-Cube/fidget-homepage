@@ -1,3 +1,10 @@
+<?php 
+    if (!array_key_exists("page", $_REQUEST)) {
+        $page = "home";
+    } else {
+        $page = $_REQUEST["page"];
+    }
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,21 +15,45 @@
     <body>
         <?php include "./modules/header.php"?>
         <div class="body">
-            <div class="feed">
-                <ul class="h2">
-                    <li>
-                        <?php include "./modules/posts/javascript_is_a_joke.html"?>
-                    </li>
-                    <li>
-                        <?php include "./modules/posts/omgzip.html"?>
-                    </li>
-                    <li>
-                        <?php include "./modules/posts/provably_secure_2.html"?>
-                    </li>
-                </ul>
-                <h3 class="linked"><a href="/posts/directory.php">See All Posts --></a></h3>
-            </div>
-            <?php include "./modules/sidebar.html"?>
+            <?php 
+                switch ($page) {
+                    case "about":
+                        include "./modules/about.html";
+                        break;
+                    case "posts":
+                        include "./modules/directory.html";
+                        break;
+                    case "portfolio":
+                        include "./modules/portfolio.html";
+                        break;
+                    case "submit":
+                        include "./modules/submit/submit.html";
+                        break;
+                    case "result":
+                        include "./modules/submit/result.php";
+                        break;
+                    case "cryptography":
+                        include "./modules/categories/cryptography.php";
+                        break;
+                    case "reverse_engineering":
+                        include "./modules/categories/reverse_engineering.php";
+                        break;
+                    case "javascript":
+                        include "./modules/categories/javascript.php";
+                        break;
+                    case "provably_secure_2":
+                        include "./modules/posts/provably_secure_2.html";
+                        break;
+                    case "omgzip":
+                        include "./modules/posts/omgzip.html";
+                        break;
+                    case "javascript_is_a_joke":
+                        include "./modules/posts/javascript_is_a_joke.html";
+                        break;
+                    default:
+                        include "./modules/homepage.php";
+                }
+            ?>
         </div>
         <?php include "./modules/footer.html"?>
     </body>

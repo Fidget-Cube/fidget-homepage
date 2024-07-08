@@ -69,15 +69,15 @@
         <script type="text/javascript" src="/js/playbutton.js"></script>
     </div>
     <div id="navline">
-        <p><a class="hidden" href="/submit">???</a></p>
+        <p><a class="hidden" href="/index.php?page=submit">???</a></p>
         <p><a href="mailto:max@fidgetcube.dev">Email</a></p>
         <p class="divider">|</p>
-        <p><a href="/about.php">About</a></p>
+        <p><a href="/index.php?page=about">About</a></p>
         <p class="divider">|</p>
-        <p><a href="/posts/directory.php">Posts</a></p>
+        <p><a href="/index.php?page=posts">Posts</a></p>
         <p class="divider">|</p>
-        <p><a href="/portfolio.php">Portfolio</a></p>
-        <p><a class="hidden" href="/submit">???</a></p>
+        <p><a href="/index.php?page=portfolio">Portfolio</a></p>
+        <p><a class="hidden" href="/index.php?page=submit">???</a></p>
         </p>
     </div>
     <div id="boxes">

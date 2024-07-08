@@ -1,0 +1,6 @@
+# Set global parameters for PHP scripts
+fastcgi_param SECRETMESSAGE "";
+fastcgi_param SECRETKEY "";
+fastcgi_param ANSWERS "";
+fastcgi_param SUPERSECRET "";
+fastcgi_param MYSQL_ROOT_PW "";

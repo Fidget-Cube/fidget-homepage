@@ -176,6 +176,7 @@ input[type=text] {
     width: 40%;
     padding: 0.8vw 1.2vw;
     margin: 0.4vw 0.2vw;
+    text-align: center;
     background-color: black;
     border: 0.2vw solid white;
     border-radius: 0.2vw;
@@ -186,7 +187,7 @@ input[type=text]:focus {
     outline: none;
     border: 0.2vw solid cyan;
     border-radius: 0.2vw;
-    width: 100%;
+    width: 80%;
 }
 
 input[type=submit] {
@@ -201,6 +202,11 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: white;
     color: black;
+}
+
+#response {
+    line-break: anywhere;
+    text-align: center;
 }
 
 /* Directory */

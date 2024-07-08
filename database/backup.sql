@@ -58,7 +58,7 @@ CREATE TABLE `songs` (
   `link` varchar(200) DEFAULT NULL,
   `filename` varchar(80) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -67,7 +67,7 @@ CREATE TABLE `songs` (
 
 LOCK TABLES `songs` WRITE;
 /*!40000 ALTER TABLE `songs` DISABLE KEYS */;
-INSERT INTO `songs` VALUES (1,'The Norwood Suite Main Theme','Cosmo D',NULL,'https://www.youtube.com/watch?v=BajS3cugInY','TheNorwoodSuiteOSTMainTheme.mp3');
+INSERT INTO `songs` VALUES (1,'The Norwood Suite Main Theme','Cosmo D',NULL,'https://www.youtube.com/watch?v=BajS3cugInY','TheNorwoodSuiteOSTMainTheme.mp3'),(2,'Violet Water','comfort._',NULL,'https://youtu.be/YZht21PH-eM','violetwater.mp3');
 /*!40000 ALTER TABLE `songs` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -80,4 +80,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-07-07 13:52:11
+-- Dump completed on 2024-07-07 16:27:05

@@ -6,7 +6,7 @@
         <?php include "./modules/head.html"?>
     </head>
     <body>
-        <?php include "./modules/header.html"?>
+        <?php include "./modules/header.php"?>
         <div class="body">
             <div class="bio">
                 <p>My name is <em style="font-style: normal; color: cyan;">Fidget-Cube</em>. Welcome to my <em style="font-style: normal; color: deeppink;">headspace</em>, fellow onieronaut :)</p>

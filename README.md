@@ -5,20 +5,22 @@ Currently a static webserver run on a LEMP stack (Linux, Nginx, MySQL, PHP).
 Setting Up Database:
 - [Install MariaDB](https://mariadb.com/kb/en/where-to-download-mariadb/)
 - Run the MariaDB server, and make sure to set a strong root password
+    - `sudo mysql -u root -p` (password is empty)
+    - `SET PASSWORD FOR 'root'@'localhost' = PASSWORD("your_root_password");`
 - Create a new database on the MariaDB server named "website"
+    - `CREATE DATABASE website;`
 - Run `mysql -u root -p website < database/backup.sql`
-- Finally, add your database root password in the form `DB_ROOT_PW="your_root_password"` to a file named `.env` in the root directory of the project
 
 Hosting with Nginx:
 - `sudo apt install nginx`
-- `sudo apt install php7.4-common php7.4-cli php7.4-fpm` (might be different php versions for your dist)
+- `sudo apt install php7.4-common php7.4-cli php7.4-fpm php7.4-mysql` (might be different php versions for your dist)
 - Within /etc/nginx/sites-available/default:
     - `index index.html index.htm` -> `index index.php index.html index.htm`
     - Uncomment object labeled as `location ~ \.php$ {`
     - Re-comment line `fastcgi_pass 127.0.0.1:9000`
-- Set environment variables:
-    - Fill `.env`
-    - `chmod +x setenv.sh && ./setenv.sh`
+- Set global PHP params:
+    - Fill out `php-params.conf.example` with the appropriate secrets, rename it to `php-params.conf`, and place it in the `/etc/nginx/snippets` directory
+    - Within /etc/nginx/sites-available/default, add the line `include snippets/php-params.conf;` inside the `location ~ \.php$ {` block
 - Copy frontend folder to /var/www/html (or system equivalent default webroot)
 - `sudo systemctl restart php7.4-fpm`
 - `sudo nginx -t` and `sudo systemctl restart nginx`

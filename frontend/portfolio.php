@@ -6,7 +6,7 @@
         <?php include "./modules/head.html"?>
     </head>
     <body>
-        <?php include "./modules/header.html"?>
+        <?php include "./modules/header.php"?>
         <div class="body">
             <div class="ctfs">
                 <h2>CTF Competitions</h2>

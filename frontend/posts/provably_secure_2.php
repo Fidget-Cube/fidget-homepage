@@ -6,7 +6,7 @@
         <?php include "../modules/head.html"?>
     </head>
     <body>
-        <?php include "../modules/header.html"?>
+        <?php include "../modules/header.php"?>
         <div class="body">
         <div class="blog_post">
             <h1 id="provably-secure-2">Provably Secure 2</h1>

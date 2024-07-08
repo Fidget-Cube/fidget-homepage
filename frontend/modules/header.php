@@ -1,8 +1,6 @@
 <?php
+    // PHP error handling is garbage, might as well not bother
     $conn = new mysqli("localhost", "root", $_SERVER['MYSQL_ROOT_PW'], "website");
-    if ($conn->connect_error) {
-        die("MySQL Database Connection failed: " . $conn->connect_error);
-    } 
 ?>
 <div class="header">
     <link rel="stylesheet" href="/css/header.css" type="text/css" media="all">

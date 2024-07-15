@@ -44,12 +44,12 @@ Hosting with Cloudflare:
 TODO:
 - Update post generation script
 - Improve error pages
-- Rotate daily songs every day
 - Rotate daily fact every day
-- Keep header static and update body while browsing (Try using Astro https://astro.build/)
+- Keep header static and update body while browsing (Use Ajax)
 - Add a guestbook
 - Update background gif
 - Fix volume output size
+- Add more songs
 
 LINKS TODO:
 - https://blackfogzine.org/ (make button for)

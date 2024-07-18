@@ -50,10 +50,9 @@ TODO:
 - Update background gif
 - Fix volume output size
 - Add more songs
+- Steal the iframe code >:)
 
 LINKS TODO:
-- https://blackfogzine.org/ (make button for)
-- https://corru.observer/widescreen/?path=/ (put under sidebar)
 - https://passwordpassword.online (put under sidebar and make button and credit https://nikita-kryukov.itch.io/)
 - https://lainzine.org/all-releases/lainzine06.pdf (make button for)
 - https://mrsmoe.neocities.org/

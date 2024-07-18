@@ -1,3 +1,4 @@
+/* Unused fonts are disabled to speed up load times */
 @font-face {
     font-family: pixeloidSans;
     src: url('/fonts/PixeloidSans-mLxMm.ttf');
@@ -10,15 +11,38 @@
 }
 
 /* https://www.fontspace.com/mistis-fonts */
-@font-face {
+/* @font-face {
     font-family: quiteMagical;
     src: url('/fonts/QuiteMagicalRegular-8VA2.ttf')
-}
+} */
 
 /* https://www.fontspace.com/agasilva */
 @font-face {
     font-family: auldMagick;
     src: url('/fonts/Auldmagick-gvdp.ttf');
+}
+
+/* @font-face {
+    font-family: bastard;
+    src: url('/fonts/newspaper.woff2') format('woff2'),
+        url('/fonts/newspaper.woff') format('woff');
+} */
+
+/* @font-face {
+    font-family: intrusive;
+    src: url('/fonts/flanfont.woff2') format('woff2'),
+        url('/fonts/flanfont.woff') format('woff');
+} */
+
+/* @font-face {
+    font-family: beech;
+    src: url('/fonts/Beech.woff') format('woff');
+} */
+
+@font-face {
+    font-family: barcode;
+    src: url('/fonts/LibreBarcode128Text-Regular.woff2') format('woff2'),
+        url('/fonts/LibreBarcode128Text-Regular.woff') format('woff');
 }
 
 #w3schools {
@@ -37,6 +61,12 @@
 
 #gandalf {
     font-family: auldMagick;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+#corru {
+    font-family: barcode;
     font-weight: normal;
     font-size: 2em;
 }

@@ -82,7 +82,7 @@
     </div>
     <div id="boxes">
         <div id="webring">
-            <iframe src="https://ring.koek.club/site/5/button.html"></iframe>
+            <iframe src="https://ring.koek.club/site/5/button.html" title="Absurdism Webring"></iframe>
         </div>
         <div class="box-container popup">
             <a href="https://github.com/Fidget-Cube" target="_blank"><img class="box" src="/img/github.gif" alt="github"></a>
@@ -93,14 +93,20 @@
         <div class="box-container popup">
             <a href="http://www.mabsland.com/Adoption.html" target="_blank"><img class="box" src="/img/Censor_14c.gif" alt="Fa Teen"></a>
         </div>
-        <!-- <div class="box-container popup">
+        <div class="box-container popup">
             <a href="https://infosec.exchange/@fidgetcube" target="_blank"><img class="box" src="/img/mastodon_button_3.gif" alt="mastodon"></a>
-        </div> -->
-        <!-- <div class="box-container popup">
+        </div>
+        <div class="box-container popup">
             <a href="https://discord.gg/invite/stYvsEBKju/" target="_blank"><img class="box" src="/img/discord2.gif" alt="discord"></a>
-        </div> -->
+        </div>
         <div class="box-container popup">
             <a href="https://absurdswrld.online/" target="_blank"><img class="box" src="/img/absurd.gif" alt="absurd"></a>
+        </div>
+        <div class="box-container popup">
+            <img class="box" src="/img/php_powered.gif" alt="php">
+        </div>
+        <div class="box-container popup">
+            <img class="box" src="/img/y2kid.gif" alt="y2kid">
         </div>
         <div class="box-container popup">
             <a href="https://darkot.neocities.org/" target="_blank"><img class="box" src="/img/8831.png" alt="darkotapproved"></a>
@@ -114,21 +120,24 @@
         <div class="box-container popup">
             <a href="https://ophanimkei.com/you/RPGmaker" target="_blank"><img class="box" src="/img/starbage_button_3.gif" alt="starbage"></a>
         </div>
-        <!-- <div class="box-container popup">
+        <div class="box-container popup">
             <img class="box" src="/img/ab-yr.gif" alt="Online Friendship">
-        </div> -->
-        <!-- <div class="box-container popup">
+        </div>
+        <div class="box-container popup">
+            <img class="box" src="/img/mysqla.gif" alt="mysql">
+        </div>
+        <div class="box-container popup">
             <a href="https://flashpointarchive.org/" target="_blank"><img class="box" src="/img/adobe_getflashp.gif" alt="flashpoint"></a>
-        </div> -->
-        <!-- <div class="box-container popup">
+        </div>
+        <div class="box-container popup">
             <img class="box" src="/img/angelfire.gif" alt="angelfire">
-        </div> -->
-        <!-- <div class="box-container popup">
+        </div>
+        <div class="box-container popup">
             <img class="box" src="/img/gc.gif" alt="geocities">
-        </div> -->
-        <!-- <div class="box-container popup">
+        </div>
+        <div class="box-container popup">
             <img class="box" src="/img/anydamn.gif" alt="bestviewed">
-        </div> -->
+        </div>
         <div class="box-container popup">
             <a href="https://ynoproject.net/" target="_blank"><img class="box" src="/img/beyes.gif" alt="yumenikki"></a>
         </div>
@@ -141,18 +150,21 @@
         <div class="box-container popup">
             <a href="https://www.blankbanshee.com/" target="_blank"><img class="box" src="/img/banshee.gif" alt="blankbanshee"></a>
         </div>
+        <div class="box-container popup">
+            <img class="box" src="/img/zanarkand.gif" alt="zanarkand">
+        </div>
         <!-- <div class="box-container popup">
             <img class="box" src="/img/cyberrot.gif" alt="cyberrot">
         </div> -->
-        <!-- <div class="box-container popup">
+        <div class="box-container popup">
             <img class="box" src="/img/eightyeight.gif" alt="88x31">
-        </div> -->
+        </div>
         <!-- <div class="box-container popup">
             <img class="box" src="/img/femboy.gif" alt="femboy">
         </div> -->
-        <!-- <div class="box-container popup">
+        <div class="box-container popup">
             <img class="box" src="/img/nekojiru2.gif" alt="nekojiru">
-        </div> -->
+        </div>
         <div class="box-container popup">
             <img class="box" src="/img/upallnight.gif" alt="upallnight">
         </div>
@@ -167,6 +179,21 @@
         </div>
         <div class="box-container popup">
             <img class="box" src="/img/gnu-linux.gif" alt="linux">
+        </div>
+        <div class="box-container popup">
+            <a href="https://blackfogzine.org/" target="_blank"><img class="box" src="/img/blackfog.png" alt="blackfog"></a>
+        </div>
+        <div class="box-container popup">
+            <img class="box" src="/img/88x31amenbreak.png" alt="amenbreak">
+        </div>
+        <div class="box-container popup">
+            <img class="box" src="/img/iblis9.gif" alt="iblis">
+        </div>
+        <div class="box-container popup">
+            <img class="box" src="/img/nocookie.gif" alt="nocookies">
+        </div>
+        <div class="box-container popup">
+            <img class="box" src="/img/nowebp.png" alt="nowebp">
         </div>
     </div>
 </div>

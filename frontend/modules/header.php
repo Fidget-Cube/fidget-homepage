@@ -1,4 +1,5 @@
 <?php
+    // MySQL
     // PHP error handling is garbage, might as well not bother
     $conn = new mysqli("localhost", "root", $_SERVER['MYSQL_ROOT_PW'], "website");
 ?>

@@ -6,6 +6,8 @@
 > solution file(s): [decompressor.py](https://github.com/Fidget-Cube/write-ups/tree/main/2023/DEFCON_CTF_Qualifiers/OMGzip/decompressor.py)  
 > original challenge github: https://github.com/Nautilus-Institute/quals-2023/tree/main/omgzip  
 
+Just this past weekend, [Pacific Hackers Association](https://www.meetup.com/pacifichackers/) and [HackMiami](https://www.meetup.com/hackmiami/) joined forces to compete in the [DEFCON CTF Qualifiers](https://quals.2023.nautilus.institute/index.html). The top 12 teams from this CTF go on to play the most competitive and challenging CTF in the world at DEFCON 31. Though, to be fair, our team wasn't of that caliber. We were able to solve 2 challenges (not counting the sanity checks) and finished in 92nd place, which is a great success by my standards! I was able to solve this one with the help of my friend Sam. It's a reverse engineering challenge, but with Python code instead of x86 assembly, which makes things much nicer.
+
 data.tar.omgzip is a .tar file compressed using a custom compression program called omgzip. The Python source code for omgzip is provided, so all you need to do is reverse the logic of the program and write your own decompression program.
 
 From the creator:  
@@ -19,11 +21,17 @@ To understand this second step, you first need to understand the data structure 
 
 When an object of the Deflater class is created, a complete binary tree of depth 8 is created and stored in self.money (see "[Types of binary trees](https://en.wikipedia.org/wiki/Binary_tree)"). Each node of the binary tree at depth 8 contains a number. Since the tree is 8 layers deep, there are 256 total nodes at the 8th layer, because 2^8 = 256. The nodes store incremental numbers from "right" to "left", starting with 0 in the rightmost node and ending with 255 in the leftmost. For purposes of visualizing the graph, I'm speaking as if the "successful_firstborn" child is on the right side of the parent, and the "conflicted_stepchild" child is on the left side. Pointers to each of these layer 8 nodes are also stored in self.dictionary, from right (at index "0") to left (at index "255").
 
-In case your head is spinning, here's a [visual aid](https://github.com/Fidget-Cube/write-ups/tree/main/2023/DEFCON_CTF_Qualifiers/OMGzip/bintree.jpg). Luckily you wont have to reverse this setup step; setting up the binary tree will be exactly the same for decompression.
+In case your head is spinning, here's a visual aid:
+
+![binary tree](https://github.com/Fidget-Cube/write-ups/tree/main/2023/DEFCON_CTF_Qualifiers/OMGzip/bintree.jpg).
+
+Luckily you wont have to reverse this setup step; setting up the binary tree will be exactly the same for decompression.
 
 Moving on to the encode() method. This method runs _travesty() on each individual byte of the file. _travesty() plugs this byte into self.dictionary in order to get one of the binary tree nodes at layer 8. From this node, it then travels up the levels of the tree, writing a single bit of data for each layer travelled. If the child node is on the left side of the parent, a 1 is written, and if on the right, a 0 is written. The first time _travesty() is run, this simply writes the binary representation of the input byte, because of the way the tree was set up. Take 0x00 for example. The tree is 8 layers deep, and numbers are ordered from lowest to highest left -> right. 0x00 is on the farthest right node and is on the right side of every parent, so traversing the tree upwards produces 00000000. These bits are then added to the output array in big-endian format (most significant bit on the left), and then _magic() function is called on the starting layer 8 node before returning.
 
-If the _magic() function wasn't called, each call to _travesty() would output the exact byte that was put in, as described above. However, _magic() performs a bit of scrambling on the binary tree on each pass, which makes things complicated. Put simply, _magic() switches the position of the input node with its aunt/uncle node, then does the same to that aunt/uncle's parent node until it reaches the root of the tree. Ultimately this puts the node at a higher layer in the tree, and also makes the tree no longer complete. Fortunately, you don't need to reverse this function, but it is important to understand, because this means our future bytes wont always map to themselves anymore, nor will they always map to 8 bits in the resulting file. If you do want a visual aid, though, I've got a rough drawing [here](https://github.com/Fidget-Cube/write-ups/tree/main/2023/DEFCON_CTF_Qualifiers/OMGzip/magic.jpg)
+If the _magic() function wasn't called, each call to _travesty() would output the exact byte that was put in, as described above. However, _magic() performs a bit of scrambling on the binary tree on each pass, which makes things complicated. Put simply, _magic() switches the position of the input node with its aunt/uncle node, then does the same to that aunt/uncle's parent node until it reaches the root of the tree. Ultimately this puts the node at a higher layer in the tree, and also makes the tree no longer complete. Fortunately, you don't need to reverse this function, but it is important to understand, because this means our future bytes wont always map to themselves anymore, nor will they always map to 8 bits in the resulting file. If you do want a visual aid, though, I've got a rough drawing here:
+
+![magic function](https://github.com/Fidget-Cube/write-ups/tree/main/2023/DEFCON_CTF_Qualifiers/OMGzip/magic.jpg)
 
 So, that's it! The encode() method transforms each byte into an array of bits, which are combined and converted into bytes and returned. Once you understand the program, you can write your decompression algorithm.
 
@@ -36,3 +44,4 @@ In total, to decompress the file data.tar.omgzip, you need to perform 3 steps. F
 Addendum:  
 The implementation I wrote in Python is really slow, taking around 15-20 minutes to decompress the whole file. A faster implementation could be written in a faster language, like C++ or Rust. My friend [Sam](reference needed) helped a lot with the completion of this challenge and wrote his own implementation of the algorithm in Rust. You can find his solution [here](reference needed).
 
+<!-- Categories:Reverse Engineering -->

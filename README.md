@@ -52,7 +52,7 @@ I've created a script to simplify the process of creating a new post. Simply cre
 `python3 generate_new_post.py`
 
 ### TODO:
-- Update post generation script
+- Post generation script should update frontend/feed
 - Improve error pages
 - Rotate daily fact every day
 - Add a guestbook

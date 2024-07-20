@@ -39,3 +39,5 @@ Oh, I got one more as a bonus for reading this far. Friendly reminder for how mu
 Some goobers wrote a script that literally uploads thousands of copies of the same package to npm. Apparently the goal was to inflate the dependent count on their main node packages, so they would have more credibility and "clout". It's not really harmful, just false advertising I guess. npm is a minefield when it comes to broken, malicous, or downright weird packages.
 
 Anyway, that's all I have for today. Maybe now is a good time to admit that I've been writing it Javascript my entire life up until now. I feel like that should be correct. If the language isn't strongly typed, why should its name be?
+
+<!-- Categories:JavaScript -->

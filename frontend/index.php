@@ -1,13 +1,14 @@
 <?php 
-    require 'vendor/autoload.php';
-
+    // Page Navigation
     $pageLookup = array(
         "home" => "/modules/homepage.php",
         "about" => "/modules/about.html",
-        "posts" => "/modules/directory.html",
+        "posts" => "/modules/directory.php",
         "portfolio" => "/modules/portfolio.html",
         "submit" => "/modules/submit/submit.html",
         "result" => "/modules/submit/result.php",
+        "post" => "/modules/post.php",
+        "category" => "/modules/category.php",
     );
 
     if (array_key_exists("page", $_REQUEST)) {

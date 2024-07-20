@@ -7,7 +7,6 @@
 > challenge file(s): [server.py](https://github.com/Fidget-Cube/write-ups/tree/main/2023/DiceCTF/Provably-Secure-2/server.py)  
 > solution file(s): [client.py](https://github.com/Fidget-Cube/write-ups/tree/main/2023/DiceCTF/Provably-Secure-2/client.py)  
 
-
 This server is basically a simulation of the IND-CCA2 game testing a custom cryptographic system. The game is described in detail here https://en.wikipedia.org/wiki/Ciphertext_indistinguishability.  
 
 The server makes 128 passes, generating a random bit (0 or 1) each pass. Our goal is to call a "Solve" function, and correctly "guess" the bit 128 times, at which point a flag is printed. In addition, the server also provides "Query Encryption" and "Query Decryption" functions.  
@@ -30,19 +29,15 @@ This operation works because of properties of the XOR (⊕) operation. Namely, i
 
 Let's make 2 encryption queries. For the first, we'll make m0 00000000000000000000000000000000 for simplicity, and m1 ffffffffffffffffffffffffffffffff for fun.  
 
-```
-m0 (16 byte hexstring): 00000000000000000000000000000000
-m1 (16 byte hexstring): ffffffffffffffffffffffffffffffff
-298c7e2c...
-```  
+`m0 (16 byte hexstring): 00000000000000000000000000000000`
+`m1 (16 byte hexstring): ffffffffffffffffffffffffffffffff`
+`298c7e2c...`
 
 For the second, we'll make both messages the same (also 00000000000000000000000000000000 for simplicity).  
 
-```
-m0 (16 byte hexstring): 00000000000000000000000000000000
-m1 (16 byte hexstring): 00000000000000000000000000000000
-7f5b2a85...
-```  
+`m0 (16 byte hexstring): 00000000000000000000000000000000`
+`m1 (16 byte hexstring): 00000000000000000000000000000000`
+`7f5b2a85...`
 
 From what we know about the encryption process, both of these outputs are a combination of 2 ciphertexts, I'll name them ct0_a and ct1_a from our first query, and ct0_b and ct1_b from our second. For the rest of this proof, "a" will denote data from our first encryption query, and "b" will denote the second.  
 
@@ -64,3 +59,4 @@ Using the other property of XOR we know about, we can simply XOR these two value
 
 And we've successfully recovered plaintext from a ciphertext message! If plaintext_a is 00000000000000000000000000000000, we know m0 was used to make the ciphertext, meaning the random bit is 0. If plaintext_a is ffffffffffffffffffffffffffffffff, the inverse is true, and the random bit is 1.  
 
+<!-- Categories:Cryptography -->

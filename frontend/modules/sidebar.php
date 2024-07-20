@@ -1,18 +1,24 @@
+<?php
+    // MySQL
+    // PHP error handling is garbage, might as well not bother
+    $conn = new mysqli("localhost", "root", $_SERVER['MYSQL_ROOT_PW'], "website");
+?>
 <div class="sidebar">
     <div class="sidebar-section">
         <h2>
             Categories
         </h2>
         <ul>
-            <li>
-                <h3 class="linked"><a href="/index.php?page=cryptography">Cryptography</a></h3>
-            </li>
-            <li>
-                <h3 class="linked"><a href="/index.php?page=reverse_engineering">Reverse Engineering</a></h3>
-            </li>
-            <li>
-                <h3 class="linked"><a href="/index.php?page=javascript">JavaScript</a></h3>
-            </li>
+            <?php
+                $res = $conn->query("SELECT DISTINCT name FROM categories;");
+                while ($row = $res->fetch_assoc()) {
+                    echo "<li>\n";
+                    echo "          <h3 class=\"linked\">\n";
+                    echo "              <a onclick=\"loadPage('category', subpage='" . $row["name"] . "')\">" . $row["name"] . "</a>\n";
+                    echo "          </h3>\n";
+                    echo "      </li>\n";
+                }
+            ?>
         </ul>
     </div>
     <div class="sidebar-section">

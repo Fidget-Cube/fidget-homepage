@@ -2,7 +2,7 @@
 
 Currently a static webserver run on a LEMP stack (Linux, Nginx, MySQL, PHP).
 
-Setting Up Database:
+### Setting Up Database:
 - [Install MariaDB](https://mariadb.com/kb/en/where-to-download-mariadb/)
 - Run the MariaDB server, and make sure to set a strong root password
     - `sudo mysql -u root -p` (password is empty)
@@ -12,7 +12,7 @@ Setting Up Database:
 - Run `mysql -u root -p website < database/backup.sql`
     - (you can create a dump with `mysqldump -u root -p website > database/backup.sql`)
 
-Hosting with Nginx:
+### Hosting with Nginx:
 - `sudo apt install nginx`
 - `sudo apt install php7.4-common php7.4-cli php7.4-fpm php7.4-mysql php7.4-curl php7.4-mbstring` (might be different php versions for your dist)
 - Install Composer Dependencies
@@ -21,7 +21,7 @@ Hosting with Nginx:
     - `index index.html index.htm` -> `index index.php index.html index.htm`
     - Uncomment object labeled as `location ~ \.php$ {`
     - Re-comment line `fastcgi_pass 127.0.0.1:9000`
-    - For extra security, add `deny all` underneath two location objects that look like `location ~ composer {` and `location ~ vendor {`
+    - For extra security, add `deny all;` underneath two location objects that look like `location ~ composer {` and `location ~ vendor {`
 - Set global PHP params:
     - Fill out `php-params.conf.example` with the appropriate secrets, rename it to `php-params.conf`, and place it in the `/etc/nginx/snippets` directory
     - Within /etc/nginx/sites-available/default, add the line `include snippets/php-params.conf;` inside the `location ~ \.php$ {` block
@@ -32,18 +32,25 @@ Hosting with Nginx:
 Your website should now be live at localhost:80
 To get an ssl cert, use certbot: https://certbot.eff.org/
 
-Add Ratelimiting:
+### Add Ratelimiting:
 - Within /etc/nginx/sites-available/default:
     - add `limit_req_zone $binary_remote_addr zone=mylimit:10m rate=6r/m;` outside everything
     - add a new location, identical to the `location ~ \.php$ {` directive, but specified as `location = /submit/result.php {`
     - add `limit_req zone=mylimit;` inside `location = /submit/result.php {`
 
-Hosting with Cloudflare:
+### Hosting with Cloudflare:
  - Currently using Cloudflare for domain protections. Can actually create a tunnel to cloudflare without opening ports on our local server.
  - https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-guide/local/
  - https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-guide/local/as-a-service/linux/
 
-TODO:
+### Adding a New Post:
+
+I've created a script to simplify the process of creating a new post. Simply create a new markdown file in `posts/`, then run `generate_new_post.py`.
+
+`pip3 install mysql-connector-python`
+
+
+### TODO:
 - Update post generation script
 - Improve error pages
 - Rotate daily fact every day

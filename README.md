@@ -14,11 +14,14 @@ Setting Up Database:
 
 Hosting with Nginx:
 - `sudo apt install nginx`
-- `sudo apt install php7.4-common php7.4-cli php7.4-fpm php7.4-mysql` (might be different php versions for your dist)
+- `sudo apt install php7.4-common php7.4-cli php7.4-fpm php7.4-mysql php7.4-curl php7.4-mbstring` (might be different php versions for your dist)
+- Install Composer Dependencies
+    - `chmod +x install_composer.sh && ./install_composer.sh`
 - Within /etc/nginx/sites-available/default:
     - `index index.html index.htm` -> `index index.php index.html index.htm`
     - Uncomment object labeled as `location ~ \.php$ {`
     - Re-comment line `fastcgi_pass 127.0.0.1:9000`
+    - For extra security, add `deny all` underneath two location objects that look like `location ~ composer {` and `location ~ vendor {`
 - Set global PHP params:
     - Fill out `php-params.conf.example` with the appropriate secrets, rename it to `php-params.conf`, and place it in the `/etc/nginx/snippets` directory
     - Within /etc/nginx/sites-available/default, add the line `include snippets/php-params.conf;` inside the `location ~ \.php$ {` block

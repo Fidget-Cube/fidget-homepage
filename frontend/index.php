@@ -1,4 +1,6 @@
 <?php 
+    require 'vendor/autoload.php';
+
     $pageLookup = array(
         "home" => "/modules/homepage.php",
         "about" => "/modules/about.html",

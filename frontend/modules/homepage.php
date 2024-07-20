@@ -22,13 +22,13 @@
                 $categories = $conn->query("SELECT name FROM categories WHERE post_id = " . $row['id'])->fetch_all();
                 echo "<li>\n";
                 echo "          <h2 class=\"linked\">\n";
-                echo "              <a onclick=\"loadPage('post', subpage='" . $row["name"] . "')\">" . $row["title"] . "</a>\n";
+                echo "              <a onclick=\"loadPage('post', '" . $row["name"] . "')\">" . $row["title"] . "</a>\n";
                 echo "          </h2>\n";
                 echo "          <p>" . $Parsedown->text($row["headliner"]) . "</p>\n";
                 echo "          <p class=\"metadata\">\n";
                 echo "              <time datetime=\"" . date_format($date, "DATE_ATOM") . "\">" . date_format($date, "M d Y") . " -- </time>\n";
                 foreach($categories as $x => $y) {
-                    echo "              <a onclick=\"loadPage('category', subpage='" . $y[0] . "')\">" . $y[0] . "</a>\n";
+                    echo "              <a onclick=\"loadPage('category', '" . $y[0] . "')\">" . $y[0] . "</a>\n";
                 }
                 echo "          </p>\n";
                 echo "      </li>\n";

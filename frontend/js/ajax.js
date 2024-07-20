@@ -38,5 +38,5 @@ function loadPage(page, subpage=null, postContent=null) {
 
 function submitButton() {
     const submitText = document.getElementById('submit-text');
-    loadPage('result', 'value=' + submitText.value);
+    loadPage('result', null, 'value=' + submitText.value);
 }

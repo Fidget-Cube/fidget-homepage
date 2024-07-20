@@ -14,7 +14,7 @@
                 while ($row = $res->fetch_assoc()) {
                     echo "<li>\n";
                     echo "          <h3 class=\"linked\">\n";
-                    echo "              <a onclick=\"loadPage('category', subpage='" . $row["name"] . "')\">" . $row["name"] . "</a>\n";
+                    echo "              <a onclick=\"loadPage('category', '" . $row["name"] . "')\">" . $row["name"] . "</a>\n";
                     echo "          </h3>\n";
                     echo "      </li>\n";
                 }

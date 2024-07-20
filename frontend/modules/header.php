@@ -16,7 +16,7 @@
         </p>
     </div>
     <div id="puzzle">
-        <a href="/"><img src="/img/puzzle-alt.png" alt=""></a>
+        <a onclick="loadPage('home')"><img src="/img/puzzle-alt.png" alt=""></a>
     </div>
     <div id="music">
         <?php
@@ -69,15 +69,15 @@
         <script type="text/javascript" src="/js/playbutton.js"></script>
     </div>
     <div id="navline">
-        <p><a class="hidden" href="/index.php?page=submit">???</a></p>
+        <p><a class="hidden" onclick="loadPage('submit')">???</a></p>
         <p><a href="mailto:max@fidgetcube.dev">Email</a></p>
         <p class="divider">|</p>
-        <p><a href="/index.php?page=about">About</a></p>
+        <p><a onclick="loadPage('about')">About</a></p>
         <p class="divider">|</p>
-        <p><a href="/index.php?page=posts">Posts</a></p>
+        <p><a onclick="loadPage('posts')">Posts</a></p>
         <p class="divider">|</p>
-        <p><a href="/index.php?page=portfolio">Portfolio</a></p>
-        <p><a class="hidden" href="/index.php?page=submit">???</a></p>
+        <p><a onclick="loadPage('portfolio')">Portfolio</a></p>
+        <p><a class="hidden" onclick="loadPage('submit')">???</a></p>
         </p>
     </div>
     <div id="boxes">
@@ -93,12 +93,12 @@
         <div class="box-container popup">
             <a href="http://www.mabsland.com/Adoption.html" target="_blank"><img class="box" src="/img/Censor_14c.gif" alt="Fa Teen"></a>
         </div>
-        <div class="box-container popup">
+        <!-- <div class="box-container popup">
             <a href="https://infosec.exchange/@fidgetcube" target="_blank"><img class="box" src="/img/mastodon_button_3.gif" alt="mastodon"></a>
-        </div>
-        <div class="box-container popup">
+        </div> -->
+        <!-- <div class="box-container popup">
             <a href="https://discord.gg/invite/stYvsEBKju/" target="_blank"><img class="box" src="/img/discord2.gif" alt="discord"></a>
-        </div>
+        </div> -->
         <div class="box-container popup">
             <a href="https://absurdswrld.online/" target="_blank"><img class="box" src="/img/absurd.gif" alt="absurd"></a>
         </div>

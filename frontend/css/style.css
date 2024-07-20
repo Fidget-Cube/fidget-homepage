@@ -16,6 +16,7 @@ a {
     text-decoration: none;
     /*text-align: center;*/
     /*word-wrap: break-word;*/
+    cursor: pointer;
 }
 
 a:hover {

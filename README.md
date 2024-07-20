@@ -49,17 +49,17 @@ I've created a script to simplify the process of creating a new post. Simply cre
 
 `pip3 install mysql-connector-python`
 
+`python3 generate_new_post.py`
 
 ### TODO:
 - Update post generation script
 - Improve error pages
 - Rotate daily fact every day
-- Keep header static and update body while browsing (Use Ajax)
 - Add a guestbook
 - Update background gif
 - Fix volume output size
 - Add more songs
-- Steal the iframe code >:)
+- Check daily rotation? (seems fast)
 
 LINKS TODO:
 - https://passwordpassword.online (put under sidebar and make button and credit https://nikita-kryukov.itch.io/)

@@ -23,7 +23,7 @@
         <?php
             // Each day we should pull a new song from the "songs" table, looping back around when finished.
             $rowcount = $conn->query("SELECT COUNT(id) as count FROM songs;")->fetch_assoc()["count"];
-            $index = (((int) (time() / 8640)) % $rowcount) + 1;
+            $index = (((int) (time() / 86400)) % $rowcount) + 1;
             // The id corresponding to this day will be used to query the song
             $query = "SELECT songs.title as title, songs.artist as artist, albums.artist as backup_artist, songs.link as link, songs.filename as fname FROM songs LEFT JOIN albums ON songs.album_id=albums.id WHERE songs.id=" . $index;
             $res = $conn->query($query);

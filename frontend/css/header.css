@@ -27,6 +27,7 @@
 #puzzle {
     grid-area: puzzle;
     max-width: 500px;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;

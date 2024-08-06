@@ -56,7 +56,6 @@ I've created a script to simplify the process of creating a new post. Simply cre
 - Improve error pages
 - Rotate daily fact every day
 - Add a guestbook
-- Update background gif
 - Fix volume output size
 - Add more songs
 - Put commas between category names

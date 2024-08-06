@@ -59,7 +59,9 @@ I've created a script to simplify the process of creating a new post. Simply cre
 - Update background gif
 - Fix volume output size
 - Add more songs
-- Check daily rotation? (seems fast)
+- Put commas between category names
+- Include all categories on categories page
+- rethink code formatting CSS?
 
 LINKS TODO:
 - https://passwordpassword.online (put under sidebar and make button and credit https://nikita-kryukov.itch.io/)

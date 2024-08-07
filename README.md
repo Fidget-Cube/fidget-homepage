@@ -63,8 +63,6 @@ I've created a script to simplify the process of creating a new post. Simply cre
 - rethink code formatting CSS?
 
 LINKS TODO:
-- https://passwordpassword.online (put under sidebar and make button and credit https://nikita-kryukov.itch.io/)
-- https://lainzine.org/all-releases/lainzine06.pdf (make button for)
 - https://mrsmoe.neocities.org/
 - https://halcybutton.neocities.org/
 - https://tetrisk-lair.neocities.org/

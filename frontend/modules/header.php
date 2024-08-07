@@ -196,5 +196,11 @@
         <div class="box-container popup">
             <img class="box" src="/img/nowebp.png" alt="nowebp">
         </div>
+        <div class="box-container popup">
+            <a href="https://passwordpassword.online" target="_blank"><img class="box" src="/img/unnamed.jpg" alt="qwerty"></a>
+        </div>
+        <div class="box-container popup">
+            <a href="https://lainzine.org/" target="_blank"><img class="box" src="/img/lainzine.png" alt="lainzine"></a>
+        </div>
     </div>
 </div>

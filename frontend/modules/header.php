@@ -89,7 +89,7 @@
             <a href="https://github.com/Fidget-Cube" target="_blank"><img class="box" src="/img/github.gif" alt="github"></a>
         </div>
         <div class="box-container popup">
-            <a href="/feed"><img class="box" src="/img/feed.gif" alt="feed"></a>
+            <a href="/feed.php"><img class="box" src="/img/feed.gif" alt="feed"></a>
         </div>
         <div class="box-container popup">
             <a href="http://www.mabsland.com/Adoption.html" target="_blank"><img class="box" src="/img/Censor_14c.gif" alt="Fa Teen"></a>

@@ -11,7 +11,7 @@
                 $date = date_create($row["date"]);
                 echo "<li>\n";
                 echo "          <h3>\n";
-                echo "              <time datetime=\"" . date_format($date, "DATE_ATOM") . "\">" . date_format($date, "M d Y") . " -- </time>\n";
+                echo "              <time datetime=\"" . date_format($date, "Y-m-d\TH:i:s\Z") . "\">" . date_format($date, "M d Y") . " -- </time>\n";
                 echo "              <a onclick=\"loadPage('post', '" . $row["name"] . "')\">" . $row["title"] . "</a>";
                 echo "          </h3>\n";
                 echo "      </li>\n";

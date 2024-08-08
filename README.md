@@ -14,7 +14,7 @@ Currently a static webserver run on a LEMP stack (Linux, Nginx, MySQL, PHP).
 
 ### Hosting with Nginx:
 - `sudo apt install nginx`
-- `sudo apt install php7.4-common php7.4-cli php7.4-fpm php7.4-mysql php7.4-curl php7.4-mbstring` (might be different php versions for your dist)
+- `sudo apt install php7.4-common php7.4-cli php7.4-fpm php7.4-mysql php7.4-curl php7.4-mbstring php7.4-xml` (might be different php versions for your dist)
 - Install Composer Dependencies
     - `chmod +x install_composer.sh && ./install_composer.sh`
 - Within /etc/nginx/sites-available/default:
@@ -52,7 +52,6 @@ I've created a script to simplify the process of creating a new post. Simply cre
 `python3 generate_new_post.py`
 
 ### TODO:
-- Post generation script should update frontend/feed
 - Improve error pages
 - Rotate daily fact every day
 - Add a guestbook
@@ -63,6 +62,8 @@ I've created a script to simplify the process of creating a new post. Simply cre
 - rethink code formatting CSS?
 
 LINKS TODO:
+- https://sadgirlsclub.wtf/
+
 - https://mrsmoe.neocities.org/
 - https://halcybutton.neocities.org/
 - https://tetrisk-lair.neocities.org/

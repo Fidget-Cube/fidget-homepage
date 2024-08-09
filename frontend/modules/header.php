@@ -104,12 +104,6 @@
             <a href="https://absurdswrld.online/" target="_blank"><img class="box" src="/img/absurd.gif" alt="absurd"></a>
         </div>
         <div class="box-container popup">
-            <img class="box" src="/img/php_powered.gif" alt="php">
-        </div>
-        <div class="box-container popup">
-            <img class="box" src="/img/y2kid.gif" alt="y2kid">
-        </div>
-        <div class="box-container popup">
             <a href="https://darkot.neocities.org/" target="_blank"><img class="box" src="/img/8831.png" alt="darkotapproved"></a>
         </div>
         <div class="box-container popup">
@@ -122,13 +116,52 @@
             <a href="https://ophanimkei.com/you/RPGmaker" target="_blank"><img class="box" src="/img/starbage_button_3.gif" alt="starbage"></a>
         </div>
         <div class="box-container popup">
-            <img class="box" src="/img/ab-yr.gif" alt="Online Friendship">
+            <a href="https://ynoproject.net/" target="_blank"><img class="box" src="/img/beyes.gif" alt="yumenikki"></a>
+        </div>
+        <div class="box-container popup">
+            <a href="https://blackfogzine.org/" target="_blank"><img class="box" src="/img/blackfog.png" alt="blackfog"></a>
+        </div>
+        <div class="box-container popup">
+            <a href="https://passwordpassword.online" target="_blank"><img class="box" src="/img/unnamed.jpg" alt="qwerty"></a>
+        </div>
+        <div class="box-container popup">
+            <a href="https://lainzine.org/" target="_blank"><img class="box" src="/img/lainzine.png" alt="lainzine"></a>
+        </div>
+        <div class="box-container popup">
+            <a href="https://www.blankbanshee.com/" target="_blank"><img class="box" src="/img/banshee.gif" alt="blankbanshee"></a>
+        </div>
+        <div class="box-container popup">
+            <a href="https://flashpointarchive.org/" target="_blank"><img class="box" src="/img/adobe_getflashp.gif" alt="flashpoint"></a>
+        </div>
+        <div class="box-container popup">
+            <img class="box" src="/img/gnu-linux.gif" alt="linux">
         </div>
         <div class="box-container popup">
             <img class="box" src="/img/mysqla.gif" alt="mysql">
         </div>
         <div class="box-container popup">
-            <a href="https://flashpointarchive.org/" target="_blank"><img class="box" src="/img/adobe_getflashp.gif" alt="flashpoint"></a>
+            <img class="box" src="/img/php_powered.gif" alt="php">
+        </div>
+        <div class="box-container popup">
+            <img class="box" src="/img/anydamn.gif" alt="bestviewed">
+        </div>
+        <div class="box-container popup">
+            <img class="box" src="/img/nocookie.gif" alt="nocookies">
+        </div>
+        <div class="box-container popup">
+            <img class="box" src="/img/nowebp.png" alt="nowebp">
+        </div>
+        <div class="box-container popup">
+            <img class="box" src="/img/cssdif.gif" alt="css">
+        </div>
+        <div class="box-container popup">
+            <img class="box" src="/img/eightyeight.gif" alt="88x31">
+        </div>
+        <div class="box-container popup">
+            <img class="box" src="/img/y2kid.gif" alt="y2kid">
+        </div>
+        <div class="box-container popup">
+            <img class="box" src="/img/ab-yr.gif" alt="Online Friendship">
         </div>
         <div class="box-container popup">
             <img class="box" src="/img/angelfire.gif" alt="angelfire">
@@ -137,19 +170,7 @@
             <img class="box" src="/img/gc.gif" alt="geocities">
         </div>
         <div class="box-container popup">
-            <img class="box" src="/img/anydamn.gif" alt="bestviewed">
-        </div>
-        <div class="box-container popup">
-            <a href="https://ynoproject.net/" target="_blank"><img class="box" src="/img/beyes.gif" alt="yumenikki"></a>
-        </div>
-        <div class="box-container popup">
             <img class="box" src="/img/bloodcovered.gif" alt="blood">
-        </div>
-        <div class="box-container popup">
-            <img class="box" src="/img/cssdif.gif" alt="css">
-        </div>
-        <div class="box-container popup">
-            <a href="https://www.blankbanshee.com/" target="_blank"><img class="box" src="/img/banshee.gif" alt="blankbanshee"></a>
         </div>
         <div class="box-container popup">
             <img class="box" src="/img/zanarkand.gif" alt="zanarkand">
@@ -157,9 +178,6 @@
         <!-- <div class="box-container popup">
             <img class="box" src="/img/cyberrot.gif" alt="cyberrot">
         </div> -->
-        <div class="box-container popup">
-            <img class="box" src="/img/eightyeight.gif" alt="88x31">
-        </div>
         <!-- <div class="box-container popup">
             <img class="box" src="/img/femboy.gif" alt="femboy">
         </div> -->
@@ -179,28 +197,10 @@
             <img class="box" src="/img/neocities-2.gif" alt="neocities">
         </div>
         <div class="box-container popup">
-            <img class="box" src="/img/gnu-linux.gif" alt="linux">
-        </div>
-        <div class="box-container popup">
-            <a href="https://blackfogzine.org/" target="_blank"><img class="box" src="/img/blackfog.png" alt="blackfog"></a>
-        </div>
-        <div class="box-container popup">
             <img class="box" src="/img/88x31amenbreak.png" alt="amenbreak">
         </div>
         <div class="box-container popup">
             <img class="box" src="/img/iblis9.gif" alt="iblis">
-        </div>
-        <div class="box-container popup">
-            <img class="box" src="/img/nocookie.gif" alt="nocookies">
-        </div>
-        <div class="box-container popup">
-            <img class="box" src="/img/nowebp.png" alt="nowebp">
-        </div>
-        <div class="box-container popup">
-            <a href="https://passwordpassword.online" target="_blank"><img class="box" src="/img/unnamed.jpg" alt="qwerty"></a>
-        </div>
-        <div class="box-container popup">
-            <a href="https://lainzine.org/" target="_blank"><img class="box" src="/img/lainzine.png" alt="lainzine"></a>
         </div>
     </div>
 </div>

@@ -21,6 +21,11 @@ Currently a static webserver run on a LEMP stack (Linux, Nginx, MySQL, PHP).
     - `index index.html index.htm` -> `index index.php index.html index.htm`
     - Uncomment object labeled as `location ~ \.php$ {`
     - Re-comment line `fastcgi_pass 127.0.0.1:9000`
+    - To add custom error pages, add these lines:
+        - `error_page 404 /index.php?page=404;`
+        - `error_page 403 /index.php?page=403;`
+        - `error_page 500 /modules/error_pages/500.html;`
+        - `error_page 503 /modules/error_pages/503.html;`
     - For extra security, add `deny all;` underneath two location objects that look like `location ~ composer {` and `location ~ vendor {`
 - Set global PHP params:
     - Fill out `php-params.conf.example` with the appropriate secrets, rename it to `php-params.conf`, and place it in the `/etc/nginx/snippets` directory
@@ -35,8 +40,8 @@ To get an ssl cert, use certbot: https://certbot.eff.org/
 ### Add Ratelimiting:
 - Within /etc/nginx/sites-available/default:
     - add `limit_req_zone $binary_remote_addr zone=mylimit:10m rate=6r/m;` outside everything
-    - add a new location, identical to the `location ~ \.php$ {` directive, but specified as `location = /submit/result.php {`
-    - add `limit_req zone=mylimit;` inside `location = /submit/result.php {`
+    - add a new location, identical to the `location ~ \.php$ {` directive, but specified as `location = /modules/submit/result.php {`
+    - add `limit_req zone=mylimit;` inside `location = /modules/submit/result.php {`
 
 ### Hosting with Cloudflare:
  - Currently using Cloudflare for domain protections. Can actually create a tunnel to cloudflare without opening ports on our local server.
@@ -52,14 +57,9 @@ I've created a script to simplify the process of creating a new post. Simply cre
 `python3 generate_new_post.py`
 
 ### TODO:
-- Improve error pages
 - Rotate daily fact every day
 - Add a guestbook
-- Fix volume output size
 - Add more songs
-- Put commas between category names
-- Include all categories on categories page
-- rethink code formatting CSS?
 
 LINKS TODO:
 - https://sadgirlsclub.wtf/

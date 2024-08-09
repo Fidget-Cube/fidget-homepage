@@ -27,8 +27,13 @@
                 echo "          <p>" . $Parsedown->text($row["headliner"]) . "</p>\n";
                 echo "          <p class=\"metadata\">\n";
                 echo "              <time datetime=\"" . date_format($date, "Y-m-d\TH:i:s\Z") . "\">" . date_format($date, "M d Y") . " -- </time>\n";
+                $count = 0;
                 foreach($categories as $x => $y) {
+                    if ($count > 0) {
+                        echo  "              , ";
+                    }
                     echo "              <a onclick=\"loadPage('category', '" . $y[0] . "')\">" . $y[0] . "</a>\n";
+                    $count++;
                 }
                 echo "          </p>\n";
                 echo "      </li>\n";

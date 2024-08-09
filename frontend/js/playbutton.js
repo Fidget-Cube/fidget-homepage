@@ -25,6 +25,17 @@ const calculateTime = (secs) => {
     }
 }
 
+// Format Volume Values
+const formatVolume = (vol) => {
+    if (vol < 100) {
+        if (vol < 10) {
+            return `00${vol}`;
+        }
+        return `0${vol}`;
+    }
+    return `${vol}`;
+}
+
 
 // Play and Mute buttons
 let playState = 'play';
@@ -128,7 +139,7 @@ seekSlider.addEventListener('change', () => {
     }
 });
 volumeSlider.addEventListener('input', (e) => {
-    volumeOutputContainer.textContent = e.target.value;
+    volumeOutputContainer.textContent = formatVolume(e.target.value);
     audio.volume = e.target.value / 100;
 });
 audio.addEventListener('progress', displayBufferedAmount)

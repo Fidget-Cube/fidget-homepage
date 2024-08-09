@@ -9,6 +9,10 @@
         "result" => "/modules/submit/result.php",
         "post" => "/modules/post.php",
         "category" => "/modules/category.php",
+        "404" => "/modules/error_pages/404.html",
+        "403" => "/modules/error_pages/403.html",
+        "500" => "/modules/error_pages/500.html",
+        "503" => "/modules/error_pages/503.html",
     );
 
     if (array_key_exists("page", $_REQUEST)) {

@@ -5,7 +5,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 // MySQL
 // PHP error handling is garbage, might as well not bother
-$conn = new mysqli("localhost", "root", $_SERVER['MYSQL_ROOT_PW'], "website");
+$conn = new mysqli("localhost", "root", "", "website");
 
 // Markdown Parsing
 $Parsedown = new Parsedown();

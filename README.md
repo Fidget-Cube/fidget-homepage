@@ -3,14 +3,13 @@
 Currently a static webserver run on a LEMP stack (Linux, Nginx, MySQL, PHP).
 
 ### Setting Up Database:
-- [Install MariaDB](https://mariadb.com/kb/en/where-to-download-mariadb/)
-- Run the MariaDB server, and make sure to set a strong root password
-    - `sudo mysql -u root -p` (password is empty)
-    - `SET PASSWORD FOR 'root'@'localhost' = PASSWORD("your_root_password");`
+- [Install and Set Up MariaDB](https://www.digitalocean.com/community/tutorials/how-to-install-mariadb-on-ubuntu-20-04)
+    - Make sure to follow ALL the steps, including creating an admin account with a password (?)
 - Create a new database on the MariaDB server named "website"
+    - `sudo mysql`
     - `CREATE DATABASE website;`
-- Run `mysql -u root -p website < database/backup.sql`
-    - (you can create a dump with `mysqldump -u root -p website > database/backup.sql`)
+- Run `sudo mysql website < database/backup.sql`
+    - (you can create a dump with `sudo mysqldump website > database/backup.sql`)
 
 ### Hosting with Nginx:
 - `sudo apt install nginx`
@@ -62,6 +61,7 @@ I've created a script to simplify the process of creating a new post. Simply cre
 - Add more songs
 
 LINKS TODO:
+- https://aesthetic.computer/ (add to list of things to do)
 - https://sadgirlsclub.wtf/
 
 - https://mrsmoe.neocities.org/
@@ -81,3 +81,6 @@ LINKS TODO:
 - https://blackwings.neocities.org/
 - https://incessantpain.neocities.org/
 - https://the1980underground.neocities.org/
+- https://87isopods.neocities.org/
+- https://seekwebserial.wordpress.com/
+- https://oran.business/020_List/Shitty+90s+website

@@ -13,7 +13,7 @@ def main():
     db = connect(
         host="localhost",
         user="root",
-        password=MYSQL_ROOT_PW,
+        password="",
         database="website"
     )
     cursor = db.cursor()
@@ -57,12 +57,10 @@ def main():
             db.commit()
 
     # Export the database
-    ps = subprocess.run(['mysqldump', '-u', 'root', '--password=password', 'website'], capture_output=True)
+    ps = subprocess.run(['sudo', 'mysqldump', 'website'], capture_output=True)
     ps.check_returncode()
     with open(os.path.join(DIR, 'database/backup.sql'), 'wb') as fp:
         fp.write(ps.stdout)
-
-    # TODO: Update frontend/feed
 
 if __name__ == '__main__':
     main()

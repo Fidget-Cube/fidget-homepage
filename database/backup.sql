@@ -70,6 +70,32 @@ INSERT INTO `categories` VALUES (2,1,'Reverse Engineering'),(3,2,'JavaScript'),(
 UNLOCK TABLES;
 
 --
+-- Table structure for table `facts`
+--
+
+DROP TABLE IF EXISTS `facts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `facts` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `content` text NOT NULL,
+  `source` varchar(255) NOT NULL,
+  `link` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `facts`
+--
+
+LOCK TABLES `facts` WRITE;
+/*!40000 ALTER TABLE `facts` DISABLE KEYS */;
+INSERT INTO `facts` VALUES (1,'If you have medical expenses that you can\'t pay, you can appeal to the US Department of Health and Human Services for financial aid.','benefits.gov','https://www.benefits.gov/benefit-finder');
+/*!40000 ALTER TABLE `facts` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `posts`
 --
 
@@ -134,4 +160,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-08-08 23:20:06
+-- Dump completed on 2024-11-10 16:43:57

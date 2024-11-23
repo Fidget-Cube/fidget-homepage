@@ -11,7 +11,7 @@ Currently a static webserver run on a LEMP stack (Linux, Nginx, MySQL, PHP).
 - Create a new database on the MariaDB server named "website"
     - `sudo mysql`
     - `CREATE DATABASE website;`
-- Run `sudo mysql website < database/backup.sql`
+- Run `sudo mysql website --force < database/backup.sql`
     - (you can create a dump with `sudo mysqldump website > database/backup.sql`)
 
 ### Hosting with Nginx:
@@ -20,12 +20,12 @@ Currently a static webserver run on a LEMP stack (Linux, Nginx, MySQL, PHP).
 - Install Composer Dependencies
     - `chmod +x install_composer.sh && ./install_composer.sh`
 - Copy `nginx.config` into your Nginx config folder
-    - `cp nginx.config /etc/nginx/sites-available/default`
+    - `sudo cp nginx.config /etc/nginx/sites-available/default`
     - NOTE: You may need to change the PHP versions in this file, it currently includes "php8.1"
 - Set global PHP params:
     - Fill out `php-params.conf.example` with the appropriate secrets, rename it to `php-params.conf`, and place it in the `/etc/nginx/snippets` directory
 - Copy frontend folder to /var/www/html (or system equivalent default webroot)
-- `sudo systemctl restart php7.4-fpm`
+- `sudo systemctl restart php8.2-fpm`
 - `sudo nginx -t` and `sudo systemctl restart nginx`
 
 Your website should now be live at localhost:80

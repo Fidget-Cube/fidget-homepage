@@ -202,5 +202,8 @@
         <div class="box-container popup">
             <img class="box" src="/img/iblis9.gif" alt="iblis">
         </div>
+        <div class="box-container popup">
+            <a href="https://sadgirlsclub.wtf" target="_blank"><img class="box" src="/img/sgc.png" alt="sadgirlsclub"></a>
+        </div>
     </div>
 </div>

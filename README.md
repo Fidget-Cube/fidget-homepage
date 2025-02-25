@@ -51,7 +51,6 @@ I've created a script to simplify the process of creating a new post. Simply cre
 
 LINKS TODO:
 - https://aesthetic.computer/ (add to list of things to do)
-- https://sadgirlsclub.wtf/
 
 - https://mrsmoe.neocities.org/
 - https://halcybutton.neocities.org/

@@ -205,5 +205,8 @@
         <div class="box-container popup">
             <a href="https://sadgirlsclub.wtf" target="_blank"><img class="box" src="/img/sgc.png" alt="sadgirlsclub"></a>
         </div>
+        <div class="box-container popup">
+            <a href="https://lucida.to" target="_blank"><img class="box" src="/img/lucida.gif" alt="lucida"></a>
+        </div>
     </div>
 </div>

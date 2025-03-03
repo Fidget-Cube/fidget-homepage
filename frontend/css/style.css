@@ -173,7 +173,7 @@ h3 {
     text-align: center;
 }
 
-input[type=text] {
+input[type=text]#submit-text {
     width: 40%;
     padding: 0.8vw 1.2vw;
     margin: 0.4vw 0.2vw;
@@ -184,7 +184,7 @@ input[type=text] {
     transition: width 0.2s ease-in-out;
 }
 
-input[type=text]:focus {
+input[type=text]:focus#submit-text {
     outline: none;
     border: 0.2vw solid cyan;
     border-radius: 0.2vw;
@@ -243,6 +243,38 @@ input[type=submit]:hover {
     margin: 0 auto;
     padding: 0.5vw;
     text-align: center;
+}
+
+textarea#comment {
+    width: 90%;
+    height: 3vw;
+    padding: 0.8vw 1.2vw;
+    margin: 0.4vw 0.2vw;
+    background-color: black;
+    border: 0.1vw solid white;
+    border-radius: 0.2vw;
+}
+
+textarea:focus#comment {
+    outline: none;
+    border: 0.1vw solid cyan;
+    border-radius: 0.2vw;
+}
+
+input[type=text]#poster {
+    width: 40%;
+    padding: 0.8vw 1.2vw;
+    margin: 0.4vw 0.2vw;
+    text-align: center;
+    background-color: black;
+    border: 0.1vw solid white;
+    border-radius: 0.2vw;
+}
+
+input[type=text]:focus#poster {
+    outline: none;
+    border: 0.1vw solid cyan;
+    border-radius: 0.2vw;
 }
 
 /* Blog Post Page */

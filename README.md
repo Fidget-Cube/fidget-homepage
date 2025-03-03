@@ -45,9 +45,10 @@ I've created a script to simplify the process of creating a new post. Simply cre
 `python3 generate_new_post.py`
 
 ### TODO:
-- Rotate daily fact every day
+- Make a script to auto-update the website intermittently
 - Add a guestbook
 - Add more songs
+- Add more facts
 
 LINKS TODO:
 - https://aesthetic.computer/ (add to list of things to do)

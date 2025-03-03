@@ -6,14 +6,23 @@
 <div class="header">
     <link rel="stylesheet" href="/css/header.css" type="text/css" media="all">
     <div id="fact">
+        <?php
+            // Each day we should pull a new fact from the "facts" table, looping back around when finished.
+            $rowcount = $conn->query("SELECT COUNT(id) as count FROM facts;")->fetch_assoc()["count"];
+            $index = (((int) (time() / 86400)) % $rowcount) + 1;
+            // The id corresponding to this day will be used to query the fact
+            $query = "SELECT facts.content as content, facts.source as source, facts.link as link FROM facts WHERE facts.id=" . $index;
+            $res = $conn->query($query);
+            $factdata = $res->fetch_assoc();
+        ?>
         <h3>
             Fact Of The Day
         </h3>
         <p>
-            If you have medical expenses that you can't pay, you can appeal to the US Department of Health and Human Services for financial aid.
+            <?php echo $factdata['content']; ?>
         </p>
         <p>
-            - <a href="https://www.benefits.gov/benefit-finder" target="_blank">benefits.gov</a>
+            - <a href="<?php echo $factdata['link']; ?>" target="_blank"><?php echo $factdata['source']; ?></a>
         </p>
     </div>
     <div id="puzzle">
@@ -86,6 +95,9 @@
             <iframe src="https://ring.koek.club/site/5/button.html" title="Absurdism Webring"></iframe>
         </div>
         <div class="box-container popup">
+            <a href="https://discordapp.com/users/228655530007199745" target="_blank"><img class="box" src="/img/discord2.gif" alt="discord"></a>
+        </div>
+        <div class="box-container popup">
             <a href="https://github.com/Fidget-Cube" target="_blank"><img class="box" src="/img/github.gif" alt="github"></a>
         </div>
         <div class="box-container popup">
@@ -97,9 +109,6 @@
         <!-- <div class="box-container popup">
             <a href="https://infosec.exchange/@fidgetcube" target="_blank"><img class="box" src="/img/mastodon_button_3.gif" alt="mastodon"></a>
         </div> -->
-        <!-- <div class="box-container popup">
-            <a href="https://discord.gg/invite/stYvsEBKju/" target="_blank"><img class="box" src="/img/discord2.gif" alt="discord"></a>
-        </div> -->
         <div class="box-container popup">
             <a href="https://absurdswrld.online/" target="_blank"><img class="box" src="/img/absurd.gif" alt="absurd"></a>
         </div>
@@ -108,6 +117,9 @@
         </div>
         <div class="box-container popup">
             <a href="https://absurdswrld.online/radio/" target="_blank"><img class="box" src="/img/absurdradio.gif" alt="absurdradio"></a>
+        </div>
+        <div class="box-container popup">
+            <a href="https://sadgirlsclub.wtf" target="_blank"><img class="box" src="/img/sgc.png" alt="sadgirlsclub"></a>
         </div>
         <div class="box-container popup">
             <a href="https://uranohead.neocities.org/" target="_blank"><img class="box" src="/img/28.gif" alt="uranohead"></a>
@@ -203,10 +215,10 @@
             <img class="box" src="/img/iblis9.gif" alt="iblis">
         </div>
         <div class="box-container popup">
-            <a href="https://sadgirlsclub.wtf" target="_blank"><img class="box" src="/img/sgc.png" alt="sadgirlsclub"></a>
+            <a href="https://lucida.to" target="_blank"><img class="box" src="/img/lucida.gif" alt="lucida"></a>
         </div>
         <div class="box-container popup">
-            <a href="https://lucida.to" target="_blank"><img class="box" src="/img/lucida.gif" alt="lucida"></a>
+            <a href="https://stardvst.xyz/" target="_blank"><img class="box" src="/img/stardvst.png" alt="stardvst"></a>
         </div>
     </div>
 </div>

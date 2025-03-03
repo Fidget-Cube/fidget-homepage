@@ -2,7 +2,7 @@
     // Page Navigation
     $pageLookup = array(
         "home" => "/modules/homepage.php",
-        "about" => "/modules/about.html",
+        "about" => "/modules/about.php",
         "posts" => "/modules/directory.php",
         "portfolio" => "/modules/portfolio.html",
         "submit" => "/modules/submit/submit.html",

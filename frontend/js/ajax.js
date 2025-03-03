@@ -2,7 +2,7 @@
 
 const pageLookup = {
     'home': '/modules/homepage.php',
-    'about': '/modules/about.html',
+    'about': '/modules/about.php',
     'posts': '/modules/directory.php',
     'portfolio': '/modules/portfolio.html',
     'submit': '/modules/submit/submit.html',
@@ -39,4 +39,10 @@ function loadPage(page, subpage=null, postContent=null) {
 function submitButton() {
     const submitText = document.getElementById('submit-text');
     loadPage('result', null, 'value=' + submitText.value);
+}
+
+function postComment() {
+    const commentText = document.getElementById('comment');
+    const poster = document.getElementById('poster');
+    loadPage('about', null, 'comment=' + commentText.value + '&poster=' + poster.value);
 }

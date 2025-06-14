@@ -45,7 +45,6 @@ I've created a script to simplify the process of creating a new post. Simply cre
 `python3 generate_new_post.py`
 
 ### TODO:
-- Make a script to auto-update the website intermittently
 - Add a guestbook
 - Add more songs
 - Add more facts
@@ -74,5 +73,3 @@ LINKS TODO:
 - https://seekwebserial.wordpress.com/
 - https://oran.business/020_List/Shitty+90s+website
 
-
-Used public goods are often auctioned off for cheap https://www.publicsurplus.com/sms/browse/home

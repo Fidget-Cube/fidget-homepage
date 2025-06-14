@@ -25,7 +25,7 @@ Currently a static webserver run on a LEMP stack (Linux, Nginx, MySQL, PHP).
 - Set global PHP params:
     - Fill out `php-params.conf.example` with the appropriate secrets, rename it to `php-params.conf`, and place it in the `/etc/nginx/snippets` directory
 - Copy frontend folder to /var/www/html (or system equivalent default webroot)
-- `sudo systemctl restart php8.2-fpm`
+- `sudo systemctl restart php8.1-fpm`
 - `sudo nginx -t` and `sudo systemctl restart nginx`
 
 Your website should now be live at localhost:80
@@ -73,3 +73,6 @@ LINKS TODO:
 - https://87isopods.neocities.org/
 - https://seekwebserial.wordpress.com/
 - https://oran.business/020_List/Shitty+90s+website
+
+
+Used public goods are often auctioned off for cheap https://www.publicsurplus.com/sms/browse/home

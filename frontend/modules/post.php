@@ -9,7 +9,7 @@
     // Markdown Parsing
     $Parsedown = new Parsedown();
 ?>
-<div class="blog_post">
+<div id="blog_post">
     <?php
         if (array_key_exists("name", $_REQUEST)) {
             $post_name = $_REQUEST["name"];

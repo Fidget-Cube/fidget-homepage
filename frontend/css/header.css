@@ -83,16 +83,6 @@ p.divider {
     align-items: center;
 }
 
-.box {
-    height: 31px;
-    width: 88px;
-}
-
-.box-container {
-    height: 31px;
-    width: 88px;
-}
-
 #webring {
     grid-area: webring;
     width: 352px;
@@ -150,9 +140,7 @@ p.divider {
         width: 17vw;
         justify-self: left;
     }
-}
 
-@media only screen and (min-width: 1000px) {
     #navline {
         flex-direction: row;
     }

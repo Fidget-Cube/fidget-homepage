@@ -8,7 +8,8 @@ const pageLookup = {
     'submit': '/modules/submit/submit.html',
     'result': '/modules/submit/result.php',
     'post': '/modules/post.php',
-    'category': '/modules/category.php'
+    'category': '/modules/category.php',
+    'friends': '/modules/friends.html'
 }
 
 function loadPage(page, subpage=null, postContent=null) {

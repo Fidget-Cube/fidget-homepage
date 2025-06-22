@@ -84,6 +84,8 @@
         <p class="divider">|</p>
         <p><a onclick="loadPage('about')">About</a></p>
         <p class="divider">|</p>
+        <p><a onclick="loadPage('friends')">Friends</a><p>
+        <p class="divider">|</p>
         <p><a onclick="loadPage('posts')">Posts</a></p>
         <p class="divider">|</p>
         <p><a onclick="loadPage('portfolio')">Portfolio</a></p>
@@ -106,44 +108,11 @@
         <div class="box-container popup">
             <a href="http://www.mabsland.com/Adoption.html" target="_blank"><img class="box" src="/img/Censor_14c.gif" alt="Fa Teen"></a>
         </div>
-        <!-- <div class="box-container popup">
-            <a href="https://infosec.exchange/@fidgetcube" target="_blank"><img class="box" src="/img/mastodon_button_3.gif" alt="mastodon"></a>
-        </div> -->
-        <div class="box-container popup">
-            <a href="https://absurdswrld.online/" target="_blank"><img class="box" src="/img/absurd.gif" alt="absurd"></a>
-        </div>
         <div class="box-container popup">
             <a href="https://darkot.neocities.org/" target="_blank"><img class="box" src="/img/8831.png" alt="darkotapproved"></a>
         </div>
         <div class="box-container popup">
-            <a href="https://absurdswrld.online/radio/" target="_blank"><img class="box" src="/img/absurdradio.gif" alt="absurdradio"></a>
-        </div>
-        <div class="box-container popup">
             <a href="https://sadgirlsclub.wtf" target="_blank"><img class="box" src="/img/sgc.png" alt="sadgirlsclub"></a>
-        </div>
-        <div class="box-container popup">
-            <a href="https://uranohead.neocities.org/" target="_blank"><img class="box" src="/img/28.gif" alt="uranohead"></a>
-        </div>
-        <div class="box-container popup">
-            <a href="https://ophanimkei.com/you/RPGmaker" target="_blank"><img class="box" src="/img/starbage_button_3.gif" alt="starbage"></a>
-        </div>
-        <div class="box-container popup">
-            <a href="https://ynoproject.net/" target="_blank"><img class="box" src="/img/beyes.gif" alt="yumenikki"></a>
-        </div>
-        <div class="box-container popup">
-            <a href="https://blackfogzine.org/" target="_blank"><img class="box" src="/img/blackfog.png" alt="blackfog"></a>
-        </div>
-        <div class="box-container popup">
-            <a href="https://passwordpassword.online" target="_blank"><img class="box" src="/img/unnamed.jpg" alt="qwerty"></a>
-        </div>
-        <div class="box-container popup">
-            <a href="https://lainzine.org/" target="_blank"><img class="box" src="/img/lainzine.png" alt="lainzine"></a>
-        </div>
-        <div class="box-container popup">
-            <a href="https://www.blankbanshee.com/" target="_blank"><img class="box" src="/img/banshee.gif" alt="blankbanshee"></a>
-        </div>
-        <div class="box-container popup">
-            <a href="https://flashpointarchive.org/" target="_blank"><img class="box" src="/img/adobe_getflashp.gif" alt="flashpoint"></a>
         </div>
         <div class="box-container popup">
             <img class="box" src="/img/gnu-linux.gif" alt="linux">
@@ -187,9 +156,9 @@
         <div class="box-container popup">
             <img class="box" src="/img/zanarkand.gif" alt="zanarkand">
         </div>
-        <!-- <div class="box-container popup">
+        <div class="box-container popup">
             <img class="box" src="/img/cyberrot.gif" alt="cyberrot">
-        </div> -->
+        </div>
         <!-- <div class="box-container popup">
             <img class="box" src="/img/femboy.gif" alt="femboy">
         </div> -->
@@ -216,9 +185,6 @@
         </div>
         <div class="box-container popup">
             <a href="https://lucida.to" target="_blank"><img class="box" src="/img/lucida.gif" alt="lucida"></a>
-        </div>
-        <div class="box-container popup">
-            <a href="https://stardvst.xyz/" target="_blank"><img class="box" src="/img/stardvst.png" alt="stardvst"></a>
         </div>
     </div>
 </div>

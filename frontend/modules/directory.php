@@ -3,7 +3,7 @@
     // PHP error handling is garbage, might as well not bother
     $conn = new mysqli("localhost", "root", "", "website");
 ?>
-<div class="all_posts">
+<div id="all_posts">
     <ul class="h3">
         <?php
             $res = $conn->query("SELECT name, title, date FROM posts ORDER BY date DESC;");

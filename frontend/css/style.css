@@ -88,6 +88,16 @@ h3 {
 
 /* Utility Classes */
 
+.box {
+    height: 31px;
+    width: 88px;
+}
+
+.box-container {
+    height: 31px;
+    width: 88px;
+}
+
 .popup * {
     transition: 0.5s;
 }
@@ -212,7 +222,7 @@ input[type=submit]:hover {
 
 /* Directory */
 
-.all_posts {
+#all_posts {
     width: 80%;
     background-color: black;
     margin: 0 auto;
@@ -221,7 +231,7 @@ input[type=submit]:hover {
 
 /* About */
 
-.bio {
+#bio {
     width: 60%;
     background-color: black;
     margin: 0 auto;
@@ -229,7 +239,7 @@ input[type=submit]:hover {
     text-align: center;
 }
 
-.ctfs {
+#ctfs {
     width: 80%;
     background-color: black;
     margin: 0 auto;
@@ -237,7 +247,7 @@ input[type=submit]:hover {
     text-align: center;
 }
 
-.talks {
+#talks {
     width: 80%;
     background-color: black;
     margin: 0 auto;
@@ -279,11 +289,47 @@ input[type=text]:focus#poster {
 
 /* Blog Post Page */
 
-.blog_post {
+#blog_post {
     width: 80%;
     background-color: black;
     margin: 0 auto;
     padding: 0.5vw;
+}
+
+/* Friends Page */
+
+#friend-group-1 {
+    margin: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#friends {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+#friend-group-2 {
+    margin: auto;
+    height: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.friends-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#friends-links {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
 }
 
 /* Non-Mobile Config */
@@ -305,13 +351,13 @@ input[type=text]:focus#poster {
         justify-content: normal;
     }
 
-    .ctfs {
+    #ctfs {
         float: left;
         width: 45%;
         text-align: right;
     }
 
-    .talks {
+    #talks {
         float: right;
         width: 45%;
         text-align: left;
@@ -319,6 +365,12 @@ input[type=text]:focus#poster {
 }
 
 /* The EXTRA Small Config */
+
+@media only screen and (max-width: 800px) {
+    #friend-group-2 {
+        flex-direction: column;
+    }
+}
 
 @media only screen and (max-width: 600px) {
     p {

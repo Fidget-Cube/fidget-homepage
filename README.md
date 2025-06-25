@@ -54,7 +54,6 @@ LINKS TODO:
 - https://aesthetic.computer/ (add to list of things to do)
 - https://siobhan.creature.love/
 - https://jacksonkerr.neocities.org/
-- https://unfortunateaccident.neocities.org/home
 - https://mrsmoe.neocities.org/
 - https://halcybutton.neocities.org/
 - https://tetrisk-lair.neocities.org/

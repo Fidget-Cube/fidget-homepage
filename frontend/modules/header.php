@@ -84,7 +84,7 @@
         <p class="divider">|</p>
         <p><a onclick="loadPage('about')">About</a></p>
         <p class="divider">|</p>
-        <p><a onclick="loadPage('friends')">Friends</a><p>
+        <p><a onclick="loadPage('friends')">Friends</a></p>
         <p class="divider">|</p>
         <p><a onclick="loadPage('posts')">Posts</a></p>
         <p class="divider">|</p>
@@ -110,6 +110,9 @@
         </div>
         <div class="box-container popup">
             <a href="https://darkot.neocities.org/" target="_blank"><img class="box" src="/img/8831.png" alt="darkotapproved"></a>
+        </div>
+        <div class="box-container popup">
+            <a href="https://unfortunateaccident.neocities.org/" target="_blank"><img class="box" src="/img/uafast.gif" alt="unfortunateaccident"></a>
         </div>
         <div class="box-container popup">
             <a href="https://sadgirlsclub.wtf" target="_blank"><img class="box" src="/img/sgc.png" alt="sadgirlsclub"></a>
@@ -156,9 +159,9 @@
         <div class="box-container popup">
             <img class="box" src="/img/zanarkand.gif" alt="zanarkand">
         </div>
-        <div class="box-container popup">
+        <!-- <div class="box-container popup">
             <img class="box" src="/img/cyberrot.gif" alt="cyberrot">
-        </div>
+        </div> -->
         <!-- <div class="box-container popup">
             <img class="box" src="/img/femboy.gif" alt="femboy">
         </div> -->
@@ -177,8 +180,11 @@
         <div class="box-container popup">
             <img class="box" src="/img/neocities-2.gif" alt="neocities">
         </div>
-        <div class="box-container popup">
+        <!-- <div class="box-container popup">
             <img class="box" src="/img/88x31amenbreak.png" alt="amenbreak">
+        </div> -->
+        <div class="box-container popup">
+            <img class="box" src="/img/iloveamenbreak.gif" alt="ramenbreak">
         </div>
         <div class="box-container popup">
             <img class="box" src="/img/iblis9.gif" alt="iblis">

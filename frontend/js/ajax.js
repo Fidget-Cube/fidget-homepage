@@ -11,6 +11,7 @@ const pageLookup = {
     'category': '/modules/category.php',
     'friends': '/modules/friends.html'
 }
+const char_allowlist = "\n\r 1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,.?;:!@#$%^&*()-_=+[]{}`~\/"
 
 function loadPage(page, subpage=null, postContent=null) {
     const xhttp = new XMLHttpRequest();
@@ -43,7 +44,15 @@ function submitButton() {
 }
 
 function postComment() {
-    const commentText = document.getElementById('comment');
-    const poster = document.getElementById('poster');
-    loadPage('about', null, 'comment=' + commentText.value + '&poster=' + poster.value);
+    const commentText = String(document.getElementById('comment').value);
+    const poster = String(document.getElementById('poster').value);
+    const full = commentText + poster
+    for (x in full) {
+        if (!char_allowlist.includes(full[x])) {
+            document.getElementById("server_response").innerHTML = "Nice try :). The <>'\" characters are not allowed.";
+            return 0;
+        }
+    }
+    // document.getElementById("server_response").innerHTML = full;
+    loadPage('about', null, 'comment=' + commentText + '&poster=' + poster);
 }

@@ -1,5 +1,5 @@
 # Backup the guestbook
-# sudo mysqldump website guestbook > database/guestbook_backup.sql
+sudo mysqldump website guestbook > database/guestbook_backup.sql
 
 # Get latest changes from remote
 git pull
@@ -8,7 +8,7 @@ git pull
 sudo mysql website --force < database/backup.sql
 
 # Restore guestbook
-# sudo mysql website --force < database/guestbook_backup.sql
+sudo mysql website --force < database/guestbook_backup.sql
 
 # Update frontend
 sudo cp -r frontend/* /var/www/html

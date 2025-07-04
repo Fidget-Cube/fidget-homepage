@@ -70,6 +70,32 @@ INSERT INTO `categories` VALUES (2,1,'Reverse Engineering'),(3,2,'JavaScript'),(
 UNLOCK TABLES;
 
 --
+-- Table structure for table `guestbook`
+--
+
+DROP TABLE IF EXISTS `guestbook`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `guestbook` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `content` text NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `timestamp` datetime default current_timestamp NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `guestbook`
+--
+
+LOCK TABLES `guestbook` WRITE;
+/*!40000 ALTER TABLE `guestbook` DISABLE KEYS */;
+INSERT INTO `guestbook` VALUES (1,'Test Message','Fidget-Cube','2025-07-03 20:14:00');
+/*!40000 ALTER TABLE `guestbook` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `facts`
 --
 

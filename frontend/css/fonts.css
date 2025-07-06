@@ -45,6 +45,17 @@
         url('/fonts/LibreBarcode128Text-Regular.woff') format('woff');
 }
 
+@font-face {
+    font-family: youtube;
+    src: url('/fonts/YouTubeSansRegular.otf') format('otf');
+}
+
+@font-face {
+    font-family: youtube;
+    src: url('/fonts/YouTubeSansBold.otf') format('otf');
+    font-weight: bold;
+}
+
 #w3schools {
     font-weight: normal;
 }
@@ -69,4 +80,9 @@
     font-family: barcode;
     font-weight: normal;
     font-size: 2em;
+}
+
+#youtube {
+    font-family: youtube;
+    font-weight: bold;
 }

@@ -41,6 +41,9 @@
             <li>
                 <h3 class="linked"><a id="corru" href="https://corru.observer/">Investigate Corru Artifacts</a></h3>
             </li>
+            <li>
+                <h3 class="linked"><a id="youtube" href="https://youtuube.neocities.org/">Watch and Share Videos Online, for "Free" (Flashing Lights)</a></h3>
+            </li>
         </ul>
     </div>
 </div>

@@ -51,12 +51,7 @@ I've created a script to simplify the process of creating a new post. Simply cre
 - Add more facts
 
 LINKS TODO:
-- https://youtuube.neocities.org/homepage
 - https://aesthetic.computer/ (add to list of things to do)
-- https://nekoweb.org/
-- https://fakeverything.com/404
-- https://siobhan.creature.love/
-- https://jacksonkerr.neocities.org/
 - https://mrsmoe.neocities.org/
 - https://halcybutton.neocities.org/
 - https://tetrisk-lair.neocities.org/

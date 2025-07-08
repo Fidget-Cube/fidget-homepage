@@ -1,3 +1,4 @@
 php-params.conf
 composer.phar
 vendor/
+database/guestbook_backup.sql

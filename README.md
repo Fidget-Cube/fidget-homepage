@@ -46,7 +46,7 @@ I've created a script to simplify the process of creating a new post. Simply cre
 
 ### TODO:
 - Make my own button
-- Add a guestbook
+- Add colors to guestbook!
 - Add more songs
 - Add more facts
 

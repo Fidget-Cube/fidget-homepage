@@ -11,7 +11,7 @@ const pageLookup = {
     'category': '/modules/category.php',
     'friends': '/modules/friends.html'
 }
-const char_allowlist = "\n\r 1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,.?;:!@#$%^&*()-_=+[]{}`~\/"
+const char_allowlist = "\n\r 1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,.?;:!@#$%^&*()-_=+[]{}`~\/😄😖😵😤🤨🤮🥺🤔🤩"
 
 function loadPage(page, subpage=null, postContent=null) {
     const xhttp = new XMLHttpRequest();
@@ -49,7 +49,7 @@ function postComment() {
     const full = commentText + poster
     for (x in full) {
         if (!char_allowlist.includes(full[x])) {
-            document.getElementById("server_response").innerHTML = "Nice try :). The <>'\" characters are not allowed.";
+            document.getElementById("server_response").innerHTML = "Nice try :). The <>'\" characters are not allowed, and if you want a new emoji added, email me!";
             return 0;
         }
     }

@@ -46,14 +46,12 @@
         <input class="p" type="submit" value="Submit" onclick="postComment()">
     </div>
     <p id="server_response"><?php echo htmlentities($message); ?></p>
-    <p>The guestbook is currently a work in progress. You can leave a note here and it will be saved, but only the latest note will be shown in a gross debug statement below</p>
-    <p>Oh yeah, feel free to try and break this. Teach me a lesson for trying to roll my own message board.</p> I've been a baaaad developer and need to be punished
-    <p><?php
+    <?php
+        date_default_timezone_set("UTC");
         $query = "SELECT guestbook.content as comment, guestbook.name as poster, guestbook.timestamp as timestamp FROM guestbook ORDER BY timestamp DESC;";
         $res = $conn->query($query);
-        $signatures = $res->fetch_assoc();
-        echo $signatures['comment'];
-        echo $signatures['poster'];
-        echo $signatures['timestamp'];
-    ?></p>
+        while($row = $res->fetch_assoc()) {
+            echo "<div><p>" . $row["comment"]. "<br><em> - " . $row["poster"]. " : " . date("F jS Y", strtotime($row["timestamp"])). "</em></p></div>";
+        }
+    ?>
 </div>

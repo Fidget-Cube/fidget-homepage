@@ -29,7 +29,7 @@ CREATE TABLE `guestbook` (
   `name` varchar(255) NOT NULL,
   `timestamp` datetime NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `guestbook` (
 
 LOCK TABLES `guestbook` WRITE;
 /*!40000 ALTER TABLE `guestbook` DISABLE KEYS */;
-INSERT INTO `guestbook` VALUES (1,'Test Message','Fidget-Cube','2025-07-03 20:14:00');
+INSERT INTO `guestbook` VALUES (1,'Test Message','Fidget-Cube','2025-07-03 20:14:00'),(7,'Test Guest','Guest Book is Cooked','2025-07-07 18:18:14'),(8,'Ok Im gonna write a really long message here to make sure everything works correctly and word wrapping is valid less see how it goes.','warbly','2025-07-07 18:46:35'),(9,'😄😖😵😤🤨🤮🥺🤔🤩','emogee','2025-07-07 20:12:10');
 /*!40000 ALTER TABLE `guestbook` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-07-07 18:15:39
+-- Dump completed on 2025-07-07 20:34:23

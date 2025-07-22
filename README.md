@@ -45,12 +45,15 @@ I've created a script to simplify the process of creating a new post. Simply cre
 `python3 generate_new_post.py`
 
 ### TODO:
+- Fix emoji bug on guestbook
 - Make my own button
 - Add colors to guestbook!
 - Add more songs
 - Add more facts
+- Add rotation button to songs and facts
 
 LINKS TODO:
+- https://divinicide.neocities.org/
 - https://aesthetic.computer/ (add to list of things to do)
 - https://mrsmoe.neocities.org/
 - https://halcybutton.neocities.org/

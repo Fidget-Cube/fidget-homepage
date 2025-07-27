@@ -56,6 +56,16 @@
     font-weight: bold;
 }
 
+@font-face {
+	font-family: seek;
+	src: url('/fonts/BLAME.ttf');
+}
+
+@font-face {
+	font-family: astronaut;
+	src: url('/fonts/ASTRONAU.TTF');
+}
+
 #w3schools {
     font-weight: normal;
 }
@@ -85,4 +95,14 @@
 #youtube {
     font-family: youtube;
     font-weight: bold;
+}
+
+#seek {
+	font-family: seek;
+	font-weight: normal;
+}
+
+#astronaut {
+	font-family: astronaut;
+	font-weight: normal;
 }

@@ -26,23 +26,26 @@
             Stuff To Do
         </h2>
         <ul>
-            <li>
-                <h3 class="linked"><a id="w3schools" href="https://www.w3schools.com/">Learn Web Development at W3Schools!</a></h3>
+        	<li>
+            	<h3 class="linked"><a id="astronaut" href="http://astronaut.io/">View the Life of a Random Individual</a></h3>
             </li>
-            <li>
-                <h3 class="linked"><a id="fauux" href="https://fauux.neocities.org/">Listen to ⌈ Wired Sound For Wired People ⌋ !</a></h3>
-            </li>
-            <li>
-                <h3 class="linked"><a id="ynoproject" href="https://ynoproject.net/">Play Yume Nikki Online!</a></h3>
-            </li>
-            <li>
-                <h3 class="linked"><a id="gandalf" href="https://gandalf.lakera.ai/">Beat Gandalf in a Battle of Wits!</a></h3>
+		   	<li>
+	       		<h3 class="linked"><a id="seek" href="https://seekwebserial.wordpress.com/">Enter an Anti-Human Universe</a></h3>
+	      	</li>
+	      	<li>
+                <h3 class="linked"><a id="youtube" href="https://youtuube.neocities.org/">Watch and Share Videos Online, for "Free" (Flashing Lights)</a></h3>
             </li>
             <li>
                 <h3 class="linked"><a id="corru" href="https://corru.observer/">Investigate Corru Artifacts</a></h3>
             </li>
             <li>
-                <h3 class="linked"><a id="youtube" href="https://youtuube.neocities.org/">Watch and Share Videos Online, for "Free" (Flashing Lights)</a></h3>
+                <h3 class="linked"><a id="gandalf" href="https://gandalf.lakera.ai/">Beat Gandalf in a Battle of Wits!</a></h3>
+            </li>
+            <li>
+                <h3 class="linked"><a id="ynoproject" href="https://ynoproject.net/">Play Yume Nikki Online!</a></h3>
+            </li>
+            <li>
+                <h3 class="linked"><a id="fauux" href="https://fauux.neocities.org/">Listen to ⌈ Wired Sound For Wired People ⌋ !</a></h3>
             </li>
         </ul>
     </div>

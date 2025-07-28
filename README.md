@@ -46,10 +46,9 @@ I've created a script to simplify the process of creating a new post. Simply cre
 
 ### TODO:
 - Make my own button
-- Add colors to guestbook!
+- Add colors to guestbook
 - Add more songs
 - Add more facts
-- Add rotation button to songs and facts
 
 LINKS TODO:
 - https://mrsmoe.neocities.org/
@@ -59,8 +58,3 @@ LINKS TODO:
 - https://yesterweb.org/
 - https://ninacti0n.neocities.org/
 - https://whitedesert.neocities.org/
-- https://suyu.neocities.org/
-- https://blinkies.neocities.org/
-- https://castlecyberskull.neocities.org/
-- https://whereareyou.neocities.org/
-- https://blackwings.neocities.org/

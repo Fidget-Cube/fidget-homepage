@@ -6,77 +6,85 @@
 <div class="header">
     <link rel="stylesheet" href="/css/header.css" type="text/css" media="all">
     <div id="fact">
-        <?php
-            // Each day we should pull a new fact from the "facts" table, looping back around when finished.
-            $rowcount = $conn->query("SELECT COUNT(id) as count FROM facts;")->fetch_assoc()["count"];
-            $index = (((int) (time() / 86400)) % $rowcount) + 1;
-            // The id corresponding to this day will be used to query the fact
-            $query = "SELECT facts.content as content, facts.source as source, facts.link as link FROM facts WHERE facts.id=" . $index;
-            $res = $conn->query($query);
-            $factdata = $res->fetch_assoc();
-        ?>
-        <h3>
-            Fact Of The Day
-        </h3>
-        <p>
-            <?php echo $factdata['content']; ?>
-        </p>
-        <p>
-            - <a href="<?php echo $factdata['link']; ?>" target="_blank"><?php echo $factdata['source']; ?></a>
-        </p>
+    	<a onclick="decrementFact()"><img src="/img/left_sharp_arrow.png" alt=""></a>
+    	<div id="fact-inner">
+	        <?php
+	            // Each day we should pull a new fact from the "facts" table, looping back around when finished.
+	            $rowcount = $conn->query("SELECT COUNT(id) as count FROM facts;")->fetch_assoc()["count"];
+	            $index = (((int) (time() / 86400)) % $rowcount) + 1;
+	            // The id corresponding to this day will be used to query the fact
+	            $query = "SELECT facts.content as content, facts.source as source, facts.link as link FROM facts WHERE facts.id=" . $index;
+	            $res = $conn->query($query);
+	            $factdata = $res->fetch_assoc();
+	        ?>
+	        <h3>
+	            Fact Of The Day
+	        </h3>
+	        <p>
+	            <?php echo $factdata['content']; ?>
+	        </p>
+	        <p>
+	            - <a href="<?php echo $factdata['link']; ?>" target="_blank"><?php echo $factdata['source']; ?></a>
+	        </p>
+        </div>
+        <a onclick="incrementFact()"><img src="/img/right_sharp_arrow.png" alt=""></a>
     </div>
     <div id="puzzle">
         <a onclick="loadPage('home')"><img src="/img/puzzle-alt.png" alt=""></a>
     </div>
     <div id="music">
-        <?php
-            // Each day we should pull a new song from the "songs" table, looping back around when finished.
-            $rowcount = $conn->query("SELECT COUNT(id) as count FROM songs;")->fetch_assoc()["count"];
-            $index = (((int) (time() / 86400)) % $rowcount) + 1;
-            // The id corresponding to this day will be used to query the song
-            $query = "SELECT songs.title as title, songs.artist as artist, albums.artist as backup_artist, songs.link as link, songs.filename as fname FROM songs LEFT JOIN albums ON songs.album_id=albums.id WHERE songs.id=" . $index;
-            $res = $conn->query($query);
-            $songdata = $res->fetch_assoc();
-        ?>
-        <h3>
-            Today's Music
-        </h3>
-        <p>
-        <?php
-            if (!$songdata["artist"]) {
-                echo $songdata["title"] . " -- " . $songdata["backup_artist"];
-            } else {
-                echo $songdata["title"] . " -- " . $songdata["artist"];
-            }
-        ?>
-        </p>
-        <p>
-            <a href="<?php echo $songdata['link']; ?>" target="_blank">
-                <?php
-                    if (str_contains($songdata["link"], "youtu")) {
-                        echo "Listen on YouTube";
-                    } else {
-                        echo "Listen Elsewhere";
-                    }
-                ?>
-            </a>
-        </p>
-        <div id="audioplayer-container">
-            <link rel="stylesheet" href="/css/audio-slider.css" type="text/css" media="all">
-            <div id="audioplayer-top-row">
-                <audio src="/audio/<?php echo $songdata['fname']; ?>" preload="metadata"></audio>
-                <button id="play-icon" class="audio"></button>
-                <span id="current-time" class="time p">0:00</span>
-                <input type="range" id="seek-slider" max="100" value="0">
-                <span id="duration" class="time p">0:00</span>
-            </div>
-            <div id="audioplayer-bottom-row">
-                <output id="volume-output" class="p">100</output>
-                <input type="range" id="volume-slider" max="100" value="100">
-                <button id="mute-icon" class="audio"></button>
-            </div>
+    	<a onclick="decrementMusic()"><img src="/img/left_sharp_arrow.png" alt=""></a>
+    	<div id="music-inner">
+	        <?php
+	            // Each day we should pull a new song from the "songs" table, looping back around when finished.
+	            $rowcount = $conn->query("SELECT COUNT(id) as count FROM songs;")->fetch_assoc()["count"];
+	            $index = (((int) (time() / 86400)) % $rowcount) + 1;
+	            // The id corresponding to this day will be used to query the song
+	            $query = "SELECT songs.title as title, songs.artist as artist, albums.artist as backup_artist, songs.link as link, songs.filename as fname FROM songs LEFT JOIN albums ON songs.album_id=albums.id WHERE songs.id=" . $index;
+	            $res = $conn->query($query);
+	            $songdata = $res->fetch_assoc();
+	        ?>
+	        <h3>
+	            Today's Music
+	        </h3>
+	        <p>
+	        <?php
+	            if (!$songdata["artist"]) {
+	                echo $songdata["title"] . " -- " . $songdata["backup_artist"];
+	            } else {
+	                echo $songdata["title"] . " -- " . $songdata["artist"];
+	            }
+	        ?>
+	        </p>
+	        <p>
+	            <a href="<?php echo $songdata['link']; ?>" target="_blank">
+	                <?php
+	                    if (str_contains($songdata["link"], "youtu")) {
+	                        echo "Listen on YouTube";
+	                    } else {
+	                        echo "Listen Elsewhere";
+	                    }
+	                ?>
+	            </a>
+	        </p>
+	        <div id="audioplayer-container">
+	            <link rel="stylesheet" href="/css/audio-slider.css" type="text/css" media="all">
+	            <div id="audioplayer-top-row">
+	                <audio src="/audio/<?php echo $songdata['fname']; ?>" preload="metadata"></audio>
+	                <button id="play-icon" class="audio"></button>
+	                <span id="current-time" class="time p">0:00</span>
+	                <input type="range" id="seek-slider" max="100" value="0">
+	                <span id="duration" class="time p">0:00</span>
+	            </div>
+	            <div id="audioplayer-bottom-row">
+	                <output id="volume-output" class="p">100</output>
+	                <input type="range" id="volume-slider" max="100" value="100">
+	                <button id="mute-icon" class="audio"></button>
+	            </div>
+	            <script type="text/javascript" src="/js/playbutton.js"></script>
+	        </div>
         </div>
-        <script type="text/javascript" src="/js/playbutton.js"></script>
+        <a onclick="incrementMusic()"><img src="/img/right_sharp_arrow.png" alt=""></a>
     </div>
     <div id="navline">
         <p><a class="hidden" onclick="loadPage('submit')">???</a></p>

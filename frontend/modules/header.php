@@ -198,7 +198,7 @@
             <img class="box" src="/img/iblis9.gif" alt="iblis">
         </div>
         <div class="box-container popup">
-            <a href="https://lucida.to" target="_blank"><img class="box" src="/img/lucida.gif" alt="lucida"></a>
+            <a href="https://cobalt.tools" target="_blank"><img class="box" src="/img/lucida.gif" alt="lucida"></a>
         </div>
     </div>
 </div>

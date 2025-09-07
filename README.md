@@ -45,7 +45,6 @@ I've created a script to simplify the process of creating a new post. Simply cre
 `python3 generate_new_post.py`
 
 ### TODO:
-- Make my own button
 - Add colors to guestbook
 - Add more songs
 - Add more facts

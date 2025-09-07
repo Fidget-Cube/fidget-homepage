@@ -5,6 +5,12 @@
 ?>
 <div class="sidebar">
     <div class="sidebar-section">
+        <p>Put my button on your own website!</p>
+        <div class="box-container popup">
+           <img class="box" src="/img/fidgetbutton.gif" alt="Fidget-Cube Button">
+        </div>
+    </div>
+    <div class="sidebar-section">
         <h2>
             Categories
         </h2>

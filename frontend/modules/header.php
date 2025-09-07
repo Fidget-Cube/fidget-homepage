@@ -101,8 +101,14 @@
         </p>
     </div>
     <div id="boxes">
+        <script src="https://sadgirlsclub.wtf/engine/banners/sadgirlsring.js"></script>
         <div id="webring">
             <iframe src="https://ring.koek.club/site/5/button.html" title="Absurdism Webring"></iframe>
+        </div>
+        <div id="sgc">
+            <p class="sgc-webring">sad girls club</p>
+            <div id="sadbanner" class="sgc-webring"></div>
+            <p id="siteauthor" class="sgc-webring"></p>
         </div>
         <div class="box-container popup">
             <a href="https://discordapp.com/users/228655530007199745" target="_blank"><img class="box" src="/img/discord2.gif" alt="discord"></a>
@@ -122,9 +128,9 @@
         <div class="box-container popup">
             <a href="https://unfortunateaccident.neocities.org/" target="_blank"><img class="box" src="/img/uafast.gif" alt="unfortunateaccident"></a>
         </div>
-        <div class="box-container popup">
+        <!-- <div class="box-container popup">
             <a href="https://sadgirlsclub.wtf" target="_blank"><img class="box" src="/img/sgc.png" alt="sadgirlsclub"></a>
-        </div>
+        </div> -->
         <div class="box-container popup">
             <img class="box" src="/img/gnu-linux.gif" alt="linux">
         </div>
@@ -146,9 +152,9 @@
         <div class="box-container popup">
             <img class="box" src="/img/cssdif.gif" alt="css">
         </div>
-        <div class="box-container popup">
+        <!-- <div class="box-container popup">
             <img class="box" src="/img/eightyeight.gif" alt="88x31">
-        </div>
+        </div> -->
         <div class="box-container popup">
             <img class="box" src="/img/y2kid.gif" alt="y2kid">
         </div>
@@ -158,9 +164,9 @@
         <div class="box-container popup">
             <img class="box" src="/img/angelfire.gif" alt="angelfire">
         </div>
-        <div class="box-container popup">
+        <!-- <div class="box-container popup">
             <img class="box" src="/img/gc.gif" alt="geocities">
-        </div>
+        </div> -->
         <div class="box-container popup">
             <img class="box" src="/img/bloodcovered.gif" alt="blood">
         </div>
@@ -185,9 +191,9 @@
         <div class="box-container popup">
             <img class="box" src="/img/webpassion.gif" alt="badwebdesign">
         </div>
-        <div class="box-container popup">
+        <!-- <div class="box-container popup">
             <img class="box" src="/img/neocities-2.gif" alt="neocities">
-        </div>
+        </div> -->
         <!-- <div class="box-container popup">
             <img class="box" src="/img/88x31amenbreak.png" alt="amenbreak">
         </div> -->

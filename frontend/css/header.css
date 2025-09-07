@@ -100,6 +100,18 @@ p.divider {
     color: black;
 }
 
+p.sgc-webring {
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+}
+
+p.sgc-webring > p {
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+}
+
 #boxes {
     grid-area: boxes;
     padding: 10px;
@@ -109,6 +121,8 @@ p.divider {
     grid-template:
         'webring webring webring webring'
         'webring webring webring webring'
+        'sgc sgc sgc sgc'
+        'sgc sgc sgc sgc'
         '. . . .'
         '. . . .'
         '. . . .'
@@ -121,6 +135,15 @@ p.divider {
     grid-area: webring;
     width: 352px;
     height: 62px;
+}
+
+#sgc {
+    grid-area: sgc;
+    width: 352px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #webring iframe {
@@ -194,6 +217,8 @@ p.divider {
         grid-template:
             '. . . . webring webring webring webring . . . .'
             '. . . . webring webring webring webring . . . .'
+            '. . . . sgc sgc sgc sgc . . . .'
+            '. . . . sgc sgc sgc sgc . . . .'
             '. . . . . . . . . . . .';
     }
 }
@@ -204,6 +229,8 @@ p.divider {
         grid-template:
             '. . . webring webring webring webring . . .'
             '. . . webring webring webring webring . . .'
+            '. . . sgc sgc sgc sgc . . .'
+            '. . . sgc sgc sgc sgc . . .'
             '. . . . . . . . . .';
     }
 }
@@ -214,6 +241,8 @@ p.divider {
         grid-template:
             '. . webring webring webring webring . . '
             '. . webring webring webring webring . .'
+            '. . sgc sgc sgc sgc . .'
+            '. . sgc sgc sgc sgc . .'
             '. . . . . . . .';
     }
 }
@@ -224,6 +253,8 @@ p.divider {
         grid-template:
             '. webring webring webring webring . '
             '. webring webring webring webring .'
+            '. sgc sgc sgc sgc .'
+            '. sgc sgc sgc sgc .'
             '. . . . . .'
             '. . . . . .';
     }
@@ -319,6 +350,16 @@ path {
         font-size: 20px;
     }
 
+    p.sgc-webring {
+        font-size: 5px;
+        line-height: 10px;
+    }
+
+    p.sgc-webring > p {
+        font-size: 5px;
+        line-height: 10px;
+    }
+
     button.audio {
         width: 20px;
         height: 20px;
@@ -327,6 +368,16 @@ path {
     #webring {
         grid-area: webring;
         width: 176px;
+        height: 31px;
+    }
+
+    #sgc {
+        grid-area: sgc;
+        width: 176px;
+        height: 31px;
+    }
+
+    #sgc img {
         height: 31px;
     }
 
@@ -348,6 +399,7 @@ path {
         display: grid;
         grid-template:
             '. webring webring .'
+            '. sgc sgc .'
             '. . . .'
             '. . . .'
             '. . . .'
@@ -361,6 +413,7 @@ path {
         display: grid;
         grid-template:
             'webring webring'
+            'sgc sgc'
             '. .'
             '. .'
             '. .'

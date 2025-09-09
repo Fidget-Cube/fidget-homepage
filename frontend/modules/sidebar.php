@@ -6,8 +6,9 @@
 <div class="sidebar">
     <div class="sidebar-section">
         <p>Put my button on your own website!</p>
-        <div class="box-container popup">
-           <img class="box" src="/img/fidgetbutton.gif" alt="Fidget-Cube Button">
+        <div class="tooltip" onclick='copyText("<img src=\"https\:\/\/fidgetcube.dev/img/fidgetbutton.gif\">"); inCopy()' onmouseout='outCopy()'>
+            <span class="tooltiptext" id="tooltiptext">Copy to Clipboard</span>
+            <img src="/img/fidgetbutton.gif" alt="Fidget-Cube Button">
         </div>
     </div>
     <div class="sidebar-section">

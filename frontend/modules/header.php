@@ -103,7 +103,7 @@
     <div id="boxes">
         <script src="https://sadgirlsclub.wtf/engine/banners/sadgirlsring.js"></script>
         <div id="webring">
-            <iframe src="https://ring.koek.club/site/5/button.html" title="Absurdism Webring"></iframe>
+            <iframe id="webring-iframe" src="https://ring.koek.club/site/5/button.html" title="Absurdism Webring"></iframe>
         </div>
         <div id="sgc">
             <p class="sgc-webring">sad girls club</p>

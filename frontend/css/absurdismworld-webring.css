@@ -1,0 +1,97 @@
+@media (max-aspect-ratio: 1/1) {
+    #main {
+        flex-direction: column;
+    }
+}
+
+@font-face {
+    font-family: "Love Letter";
+    src: url("/fonts/LoveLetter.ttf") format("truetype");
+}
+
+#abs-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    background-image: url("/img/absurdismworld-webring-background.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#abs-infotext p {
+    text-align: center;
+    width: 120px;
+    font-size: 10px;
+    line-height: 1.2;
+}
+
+#absurd {
+    /* font-family: "Love Letter", Consolas, monaco, monospace; */
+    font-size: 12px;
+    text-decoration: none;
+    
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.abs-site-btn {
+    text-align: center;
+    width: 70px;
+    margin: 4px;
+    word-wrap: break-word;
+}
+
+.abs-site-btn a {
+    /* font-family: "Love Letter"; */
+    font-size: 12px;
+}
+
+.abs-prev-arrow {
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin: auto;
+}
+
+.abs-next-arrow {
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin: auto;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#abs-main a {
+    color: #d2738a;
+}
+
+#abs-main a:hover {
+    color: #ffa6bc;
+    -webkit-animation: link-glow 0.5s ease-out forwards;
+    -moz-animation: link-glow 0.5s ease-out forwards;
+    animation: link-glow 0.5s ease-out forwards;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff;
+        color: #ffb0cd;
+    }
+    to {
+        color: #ff77a9;
+        text-shadow: 0 0 10px #ff77a9;
+    }
+}
+
+@keyframes link-glow {
+    from {
+        text-shadow: 0 0 0px #00000000;
+    }
+    to {
+        text-shadow: 0 0 10px white;
+    }
+}

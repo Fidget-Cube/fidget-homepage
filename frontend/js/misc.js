@@ -32,4 +32,4 @@ function setIframeSrc() {
       }
   }, 5000);
 }
-setTimeout(setIframeSrc, 5000);
+// setTimeout(setIframeSrc, 5000);

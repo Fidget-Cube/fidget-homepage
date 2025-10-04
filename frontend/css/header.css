@@ -135,6 +135,11 @@ p.sgc-webring > p {
     grid-area: webring;
     width: 352px;
     height: 62px;
+    font-family: Consolas, monaco, monospace;
+    font-size: 12px;
+    border: solid 1px white;
+    overflow: hidden;
+    margin: 0px;
 }
 
 #sgc {

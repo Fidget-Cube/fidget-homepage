@@ -105,24 +105,7 @@
         <div id="webring">
             <!-- <iframe id="webring-iframe" src="https://ring.koek.club/site/5/button.html" title="Absurdism Webring"></iframe> -->
             <!-- Sbeve's server is gone, we have to self-host -->
-            <link rel="stylesheet" href="/css/absurdismworld-webring.css" type="text/css" media="all">
-            <div id="abs-main">
-                <div class="abs-site-btn">
-                    <a href="https://absurdismworld.nekoweb.org/">
-                        <img class="abs-prev-arrow" src="/img/absurdismworld-webring-arrow.png">
-                        Absurd
-                    </a>
-                </div>
-                <div id="abs-infotext">
-                    <p>Part of the <a id="absurd" href="https://absurdismworld.nekoweb.org/">ABSURDISMWORLD</a> webring</p>
-                </div>
-                <div class="abs-site-btn">
-                    <a href="https://absurdismworld.nekoweb.org/radio/">
-                        <img class="abs-next-arrow" src="/img/absurdismworld-webring-arrow.png">
-                        Radio
-                    </a>
-                </div>
-            </div>
+            <iframe id="webring-iframe" src="/modules/absurdismworld-webring.php" title="Absurdism Webring"></iframe>
         </div>
         <div id="sgc">
             <p class="sgc-webring">sad girls club</p>

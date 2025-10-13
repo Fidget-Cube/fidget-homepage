@@ -105,7 +105,7 @@
         <div id="webring">
             <!-- <iframe id="webring-iframe" src="https://ring.koek.club/site/5/button.html" title="Absurdism Webring"></iframe> -->
             <!-- Sbeve's server is gone, we have to self-host -->
-            <iframe id="webring-iframe" src="/modules/absurdismworld-webring.php" title="Absurdism Webring"></iframe>
+            <iframe id="webring-iframe" src="/modules/absurdismworld-webring.php?member=Fidget-Cube" title="Absurdism Webring"></iframe>
         </div>
         <div id="sgc">
             <p class="sgc-webring">sad girls club</p>

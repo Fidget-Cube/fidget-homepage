@@ -1,6 +1,7 @@
 <?php 
     $webringIds = array(
         "Absurd",
+        "Radio",
         "Fidget-Cube",
         "U.A.",
         "Sata",
@@ -9,6 +10,7 @@
     );
     $webringLinks = array(
         "https://absurdismworld.nekoweb.org/",
+        "https://absurdismworld.nekoweb.org/radio/",
         "https://fidgetcube.dev/",
         "https://unfortunateaccident.neocities.org/",
         "https://sata.neocities.org/",

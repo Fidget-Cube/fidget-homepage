@@ -52,3 +52,5 @@ I've created a script to simplify the process of creating a new post. Simply cre
 - https://marginalia-search.com/explore
 - https://rsmatchmaking.com/
 - https://www.tvchany.com/home
+- https://femtanyl.com
+- https://svpacyberia.com

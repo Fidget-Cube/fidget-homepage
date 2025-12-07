@@ -48,6 +48,10 @@ I've created a script to simplify the process of creating a new post. Simply cre
 - Add colors to guestbook
 - Add more songs
 - Add more facts
+- Replace background with live JavaScript
+- Find ways to make assets lighter?
+- Fix guestbook emoji bug
+- Create a docker-compose file
 - https://www.nesso.xyz/
 - https://marginalia-search.com/explore
 - https://rsmatchmaking.com/

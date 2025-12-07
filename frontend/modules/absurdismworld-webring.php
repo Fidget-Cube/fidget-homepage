@@ -7,6 +7,7 @@
         "Sata",
         "Ramtoi",
         "Darkot",
+        "sbeve",
     );
     $webringLinks = array(
         "https://absurdismworld.nekoweb.org/",
@@ -15,7 +16,8 @@
         "https://unfortunateaccident.neocities.org/",
         "https://sata.neocities.org/",
         "https://orangeryzone.neocities.org/",
-        "https://darkot.neocities.org/"
+        "https://darkot.neocities.org/",
+        "https://denno.life/",
     );
 
     $index = 0;

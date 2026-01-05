@@ -52,6 +52,8 @@ I've created a script to simplify the process of creating a new post. Simply cre
 - Find ways to make assets lighter?
 - Fix guestbook emoji bug
 - Create a docker-compose file
+- Add an AI scaper black hole
+- Recover Guestbook and make it more obvious
 - https://www.nesso.xyz/
 - https://marginalia-search.com/explore
 - https://rsmatchmaking.com/

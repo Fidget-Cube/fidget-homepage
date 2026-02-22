@@ -14,7 +14,7 @@
         "https://absurdismworld.nekoweb.org/radio/",
         "https://fidgetcube.dev/",
         "https://unfortunateaccident.neocities.org/",
-        "https://sata.neocities.org/",
+        "https://sata.nekoweb.org/",
         "https://orangeryzone.neocities.org/",
         "https://darkot.neocities.org/",
         "https://denno.life/",
